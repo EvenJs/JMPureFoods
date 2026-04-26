@@ -9,18 +9,18 @@
 
 ### 1.1 Initialise project
 
-- [ ] Run `npm create vite@latest jm-purefoods -- --template react`
-- [ ] `cd jm-purefoods && npm install`
-- [ ] Run dev server to confirm it works: `npm run dev`
+- [x] Run `npm create vite@latest jm-purefoods -- --template react`
+- [x] `cd jm-purefoods && npm install`
+- [x] Run dev server to confirm it works: `npm run dev`
 
 ### 1.2 Install dependencies
 
-- [ ] `npm install tailwindcss @tailwindcss/vite` — Tailwind CSS v4
-- [ ] `npm install react-router-dom` — React Router v6
-- [ ] `npm install vite-ssg` — static pre-rendering
-- [ ] `npm install react-helmet-async` — per-page SEO meta tags
-- [ ] `npm install framer-motion` — animations
-- [ ] `npm install react-hook-form zod @hookform/resolvers` — form validation
+- [x] `npm install tailwindcss @tailwindcss/vite` — Tailwind CSS v4
+- [x] `npm install react-router-dom` — React Router v6
+- [x] `npm install vite-ssg` — static pre-rendering
+- [x] `npm install react-helmet-async` — per-page SEO meta tags
+- [x] `npm install framer-motion` — animations
+- [x] `npm install react-hook-form zod @hookform/resolvers` — form validation
 
 ### 1.3 Configure Tailwind CSS v4
 

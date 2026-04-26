@@ -119,9 +119,9 @@ public/
 
 ### 1.7 Seed data file
 
-- [ ] Copy `siteData.json` into `src/data/`
-- [ ] Update colour tokens, nav links, page routes to match new design
-- [ ] Update home page sections to match: hero, whyChoose, specialists, capabilities, stats, trustedBrands, ctaBanner
+- [x] Copy `siteData.json` into `src/data/`
+- [x] Update colour tokens, nav links, page routes to match new design
+- [x] Update home page sections to match: hero, whyChoose, specialists, capabilities, stats, trustedBrands, ctaBanner
 
 ---
 

@@ -1,0 +1,424 @@
+{
+  "company": {
+    "name": "JM Purefoods Pty Ltd",
+    "shortName": "JM Purefoods",
+    "legalName": "JM PUREFOODS PTY LTD",
+    "abn": "91 690 274 901",
+    "acn": "690 274 901",
+    "address": "2 Exchange Dr, Pakenham VIC 3810",
+    "phone": "+61 428 254 866",
+    "email": "info@jmpurefoods.com.au",
+    "logo": "/assets/logo.svg",
+    "tagline": "Your Trusted Toll Packing Partner",
+    "description": "JM Purefoods Pty Ltd is an Australia-based food company focused on edible oil production, packaging, and supply chain solutions. We operate across both local and international markets, offering flexible toll packing services tailored to different customer requirements."
+  },
+
+  "colours": {
+    "brand": "#2a5c3f",
+    "brandMid": "#3a7a52",
+    "darkSection": "#1e4028",
+    "footer": "#1a3525",
+    "gold": "#c8960c",
+    "goldLight": "#e8b830",
+    "goldBg": "#fdf6e3",
+    "offWhite": "#f8f9f7",
+    "textDark": "#1a2e1f",
+    "textMuted": "#5a7060"
+  },
+
+  "navigation": [
+    { "label": "Home", "path": "/" },
+    { "label": "About Us", "path": "/about" },
+    { "label": "Services", "path": "/services" },
+    { "label": "Capabilities", "path": "/services#capabilities" },
+    { "label": "Quality", "path": "/services#quality" },
+    { "label": "Contact", "path": "/contact" }
+  ],
+
+  "pages": {
+    "home": {
+      "seo": {
+        "title": "JM Purefoods Pty Ltd",
+        "description": "Premium liquid toll packing in Australia. Edible oils, sauces, honey, dressings and more. Based in Pakenham, VIC.",
+        "ogTitle": "JM Purefoods Pty Ltd",
+        "ogDescription": "Premium liquid toll packing in Australia. Edible oils, sauces, honey, dressings and more.",
+        "canonical": "https://jmpurefoods.com.au/"
+      },
+
+      "hero": {
+        "heading": "Your Trusted Toll Packing Partner",
+        "subheading": "Premium liquid packing solutions with quality, safety and integrity.",
+        "cta": { "label": "Our Services", "path": "/services" },
+        "oilDrop": true
+      },
+
+      "whyChoose": {
+        "heading": "Why Choose JM Purefoods",
+        "items": [
+          {
+            "icon": "shield-check",
+            "title": "Premium Quality",
+            "description": "Strict quality control at every step."
+          },
+          {
+            "icon": "leaf",
+            "title": "Food Safety",
+            "description": "Certified systems you can trust."
+          },
+          {
+            "icon": "cpu",
+            "title": "Advanced Technology",
+            "description": "Modern equipment, efficient & reliable."
+          },
+          {
+            "icon": "settings",
+            "title": "Flexible Solutions",
+            "description": "Tailored to your business needs."
+          },
+          {
+            "icon": "handshake",
+            "title": "Reliable Partnership",
+            "description": "Committed to your long-term success."
+          }
+        ]
+      },
+
+      "specialists": {
+        "heading": "Specialists in Liquid Toll Packing",
+        "subheading": "We co-pack a wide range of liquid products with the highest standards of quality and efficiency.",
+        "cta": { "label": "View Capabilities", "path": "/services" },
+        "products": [
+          { "icon": "droplet", "label": "Edible Oils" },
+          { "icon": "flask", "label": "Sauces" },
+          { "icon": "drop", "label": "Honey" },
+          { "icon": "salad", "label": "Dressings" },
+          { "icon": "cup", "label": "Beverages" },
+          { "icon": "more", "label": "and more" }
+        ]
+      },
+
+      "capabilities": {
+        "heading": "Our Capabilities",
+        "items": [
+          { "icon": "package", "title": "Product Handling & Storage" },
+          { "icon": "droplets", "title": "Filling & Capping" },
+          { "icon": "tag", "title": "Labelling & Coding" },
+          { "icon": "microscope", "title": "Quality Control & Testing" },
+          { "icon": "box", "title": "Packaging & Palletising" }
+        ]
+      },
+
+      "builtForQuality": {
+        "heading": "Built for Quality. Focused on You.",
+        "description": "Our facility is designed to meet the highest food safety standards, ensuring your products are in safe hands.",
+        "cta": { "label": "About Our Facility", "path": "/about" },
+        "image": "/assets/facility-placeholder.jpg"
+      },
+
+      "stats": [
+        { "value": "10+", "suffix": "", "label": "Years of Experience" },
+        { "value": "100+", "suffix": "", "label": "Satisfied Clients" },
+        { "value": "5000+", "suffix": "", "label": "Products Packed Daily" },
+        { "value": "100", "suffix": "%", "label": "Commitment to Quality" }
+      ],
+
+      "trustedBrands": {
+        "heading": "Trusted by Leading Brands",
+        "logos": [
+          {
+            "name": "Brand 1",
+            "image": "/assets/brands/brand-1-placeholder.png"
+          },
+          {
+            "name": "Brand 2",
+            "image": "/assets/brands/brand-2-placeholder.png"
+          },
+          {
+            "name": "Brand 3",
+            "image": "/assets/brands/brand-3-placeholder.png"
+          },
+          {
+            "name": "Brand 4",
+            "image": "/assets/brands/brand-4-placeholder.png"
+          },
+          {
+            "name": "Brand 5",
+            "image": "/assets/brands/brand-5-placeholder.png"
+          }
+        ]
+      },
+
+      "ctaBanner": {
+        "heading": "Let's Build Something Great Together",
+        "subheading": "Ready to take your product to the next level? We're here to help.",
+        "cta": { "label": "Contact Us", "path": "/contact" },
+        "oilDrop": true
+      }
+    },
+
+    "about": {
+      "seo": {
+        "title": "About Us | JM Purefoods Pty Ltd",
+        "description": "Australian toll packing specialists focused on quality, food safety and flexible solutions.",
+        "ogTitle": "About Us | JM Purefoods",
+        "ogDescription": "Australian toll packing specialists focused on quality, food safety and flexible solutions.",
+        "canonical": "https://jmpurefoods.com.au/about"
+      },
+      "hero": {
+        "heading": "About JM Purefoods",
+        "subheading": "An Australia-based food company focused on edible oil production, packaging, and supply chain solutions.",
+        "image": "/assets/about-hero-placeholder.jpg"
+      },
+      "intro": "JM Purefoods Pty Ltd is an Australia-based food company focused on edible oil production, packaging, and supply chain solutions. We operate across both local and international markets, offering flexible toll packing services tailored to different customer requirements. Our capabilities include a wide range of packaging formats and sizes, enabling our partners to efficiently bring products to market under their own brands or supply channels. We are committed to delivering consistent quality, operational flexibility, and reliable service across the entire supply chain.",
+      "pillars": [
+        {
+          "title": "Our Story",
+          "body": "Founded in Australia, JM Purefoods was established to provide reliable and flexible edible oil production and packaging services to businesses of all sizes — from emerging brands to established distributors."
+        },
+        {
+          "title": "Our Mission",
+          "body": "To deliver consistent quality, operational flexibility, and reliable service across the entire edible oil supply chain — helping our partners bring their products to market efficiently."
+        },
+        {
+          "title": "Our Values",
+          "body": "We pride ourselves on transparency, quality, and long-term partnerships. Every order, every client, and every product is handled with the same level of care and commitment."
+        }
+      ]
+    },
+
+    "services": {
+      "seo": {
+        "title": "Services & Capabilities | JM Purefoods Pty Ltd",
+        "description": "End-to-end toll packing solutions including filling, capping, labelling, quality control and packaging.",
+        "ogTitle": "Services & Capabilities | JM Purefoods",
+        "ogDescription": "End-to-end toll packing solutions — filling, capping, labelling, QC and packaging.",
+        "canonical": "https://jmpurefoods.com.au/services"
+      },
+      "hero": {
+        "heading": "End-to-End Toll Packing Solutions",
+        "subheading": "From bulk to shelf-ready. We handle it all for you.",
+        "image": "/assets/services-hero-placeholder.jpg"
+      },
+      "process": {
+        "heading": "Our Process",
+        "steps": [
+          {
+            "number": 1,
+            "title": "Get in Touch",
+            "description": "Tell us about your product and packaging needs."
+          },
+          {
+            "number": 2,
+            "title": "Plan & Confirm",
+            "description": "We propose the best solution and confirm your requirements."
+          },
+          {
+            "number": 3,
+            "title": "Fill & Pack",
+            "description": "Our team fills, packs and checks every detail."
+          },
+          {
+            "number": 4,
+            "title": "Ready to Deliver",
+            "description": "Your products are ready for dispatch, on time."
+          }
+        ]
+      },
+      "packagingFormats": {
+        "heading": "Packaging Formats",
+        "items": [
+          {
+            "label": "Bottles",
+            "size": "250ml – 5L",
+            "image": "/assets/formats/bottles-placeholder.png"
+          },
+          {
+            "label": "Jerry Cans",
+            "size": "5L – 25L",
+            "image": "/assets/formats/jerrycans-placeholder.png"
+          },
+          {
+            "label": "Drums",
+            "size": "20L – 200L",
+            "image": "/assets/formats/drums-placeholder.png"
+          },
+          {
+            "label": "IBC Totes",
+            "size": "1000L",
+            "image": "/assets/formats/ibc-placeholder.png"
+          }
+        ]
+      },
+      "privateLabel": {
+        "heading": "Private Label Packaging",
+        "intro": "We support clients in developing their own branded edible oil packaging solutions.",
+        "features": [
+          "Custom bottle design",
+          "Label application",
+          "Brand packaging support",
+          "Export compliance packaging"
+        ]
+      }
+    },
+
+    "foodService": {
+      "seo": {
+        "title": "Food Service Supply | JM Purefoods Pty Ltd",
+        "description": "Bulk edible oil supply for restaurants, catering businesses, and commercial kitchens across Australia.",
+        "ogTitle": "Food Service Supply | JM Purefoods",
+        "ogDescription": "Bulk edible oil supply for restaurants, catering, and commercial kitchens across Australia.",
+        "canonical": "https://jmpurefoods.com.au/food-service"
+      },
+      "hero": {
+        "heading": "Reliable Bulk Edible Oil Supply",
+        "subheading": "Consistent supply, cost efficiency, and reliable logistics for food service operations.",
+        "image": "/assets/food-service-hero-placeholder.jpg"
+      },
+      "intro": "We supply edible oil solutions in bulk formats for food service industries including restaurants, catering businesses, and commercial kitchens. Our focus is on consistent supply, cost efficiency, and reliable logistics.",
+      "targetCustomers": [
+        "Restaurants",
+        "Catering businesses",
+        "Commercial kitchens"
+      ],
+      "capabilities": [
+        { "icon": "droplet", "label": "Bulk edible oil supply" },
+        {
+          "icon": "package",
+          "label": "Large format packaging (drums / containers / IBC)"
+        },
+        { "icon": "refresh", "label": "Consistent commercial supply" },
+        { "icon": "sliders", "label": "Custom order volumes" },
+        { "icon": "handshake", "label": "Long-term supply partnerships" }
+      ],
+      "packagingFormats": [
+        {
+          "size": "10L",
+          "type": "Container",
+          "image": "/assets/formats/10l-placeholder.png"
+        },
+        {
+          "size": "20L",
+          "type": "Container",
+          "image": "/assets/formats/20l-placeholder.png"
+        },
+        {
+          "size": "Bulk",
+          "type": "Bag-in-box",
+          "image": "/assets/formats/bib-placeholder.png"
+        }
+      ]
+    },
+
+    "contact": {
+      "seo": {
+        "title": "Contact Us | JM Purefoods Pty Ltd",
+        "description": "Get in touch with JM Purefoods Pty Ltd. Pakenham VIC. ABN 91 690 274 901.",
+        "ogTitle": "Contact Us | JM Purefoods",
+        "ogDescription": "Send an enquiry to JM Purefoods Pty Ltd. We'll get back to you shortly.",
+        "canonical": "https://jmpurefoods.com.au/contact"
+      },
+      "hero": {
+        "heading": "Get in Touch",
+        "subheading": "Send us an enquiry and we'll get back to you shortly."
+      },
+      "form": {
+        "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+        "fields": [
+          {
+            "name": "name",
+            "label": "Full name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Your name"
+          },
+          {
+            "name": "email",
+            "label": "Email address",
+            "type": "email",
+            "required": true,
+            "placeholder": "your@email.com"
+          },
+          {
+            "name": "phone",
+            "label": "Phone (optional)",
+            "type": "tel",
+            "required": false,
+            "placeholder": "+61 ..."
+          },
+          {
+            "name": "message",
+            "label": "Message",
+            "type": "textarea",
+            "required": true,
+            "placeholder": "Tell us about your requirements..."
+          }
+        ],
+        "submitLabel": "Send Enquiry",
+        "successMessage": "Thank you! Your enquiry has been sent. We'll be in touch shortly.",
+        "errorMessage": "Something went wrong. Please try again or email us directly at info@jmpurefoods.com.au."
+      },
+      "contactDetails": [
+        {
+          "icon": "phone",
+          "label": "Phone",
+          "value": "+61 428 254 866",
+          "href": "tel:+61428254866"
+        },
+        {
+          "icon": "mail",
+          "label": "Email",
+          "value": "info@jmpurefoods.com.au",
+          "href": "mailto:info@jmpurefoods.com.au"
+        },
+        {
+          "icon": "map-pin",
+          "label": "Address",
+          "value": "2 Exchange Dr, Pakenham VIC 3810",
+          "href": "https://maps.google.com/?q=2+Exchange+Dr+Pakenham+VIC+3810"
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "tagline": "Premium liquid toll packing solutions with quality, safety and integrity.",
+    "columns": [
+      {
+        "heading": "Pages",
+        "links": [
+          { "label": "Home", "path": "/" },
+          { "label": "About Us", "path": "/about" },
+          { "label": "Services", "path": "/services" },
+          { "label": "Food Service", "path": "/food-service" },
+          { "label": "Contact", "path": "/contact" }
+        ]
+      },
+      {
+        "heading": "Services",
+        "links": [
+          { "label": "Toll Packing", "path": "/services" },
+          { "label": "Contract Filling", "path": "/services" },
+          { "label": "Custom Packaging", "path": "/services" },
+          { "label": "Private Label", "path": "/services#private-label" },
+          { "label": "Food Service Supply", "path": "/food-service" }
+        ]
+      },
+      {
+        "heading": "Contact",
+        "links": [
+          { "label": "+61 428 254 866", "href": "tel:+61428254866" },
+          {
+            "label": "info@jmpurefoods.com.au",
+            "href": "mailto:info@jmpurefoods.com.au"
+          },
+          {
+            "label": "2 Exchange Dr, Pakenham VIC 3810",
+            "href": "https://maps.google.com/?q=2+Exchange+Dr+Pakenham+VIC+3810"
+          }
+        ]
+      }
+    ],
+    "legal": "© 2025 JM Purefoods Pty Ltd. All rights reserved.",
+    "location": "Pakenham, VIC, Australia"
+  }
+}

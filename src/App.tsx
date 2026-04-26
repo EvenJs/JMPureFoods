@@ -1,14 +1,18 @@
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Service from "./pages/Service";
+import FoodService from "./pages/FoodService";
+import ContactUs from "./pages/ContactUs";
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-hero-bg flex items-center justify-center">
-      <div className="bg-brand text-white px-6 py-4 rounded-lg">
-        Tailwind v4 + custom colours working ✓
-      </div>
-      <div className="bg-gold text-white">test</div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/services" element={<Service />} />
+      <Route path="/food-service" element={<FoodService />} />
+      <Route path="/contact" element={<ContactUs />} />
+    </Routes>
   );
 }
-
-export default App;

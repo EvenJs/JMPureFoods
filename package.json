@@ -19,7 +19,6 @@
     "react-hook-form": "^7.74.0",
     "react-router-dom": "^7.14.2",
     "tailwindcss": "^4.2.4",
-    "vite-ssg": "^28.3.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {

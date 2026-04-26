@@ -49,21 +49,21 @@
 
 ### 1.4 Configure vite-ssg
 
-- [ ] Create `src/routes.jsx` with 5 routes:
+- [x] Create `src/routes.jsx` with 5 routes:
   - `/` → `pages/Home.jsx`
   - `/about` → `pages/About.jsx`
   - `/services` → `pages/Services.jsx`
   - `/food-service` → `pages/FoodService.jsx`
   - `/contact` → `pages/ContactUs.jsx`
-- [ ] Update `src/main.jsx` to use `ViteSSG`
-- [ ] Wrap app root with `HelmetProvider`
+- [x] Update `src/main.jsx` to use `ViteSSG`
+- [x] Wrap app root with `HelmetProvider`
 
 ### 1.5 Set up GitHub repo
 
-- [ ] `git init` + initial commit
-- [ ] Create GitHub repo, push
-- [ ] Create `dev` branch, set as default working branch
-- [ ] Add `.gitignore` (node_modules, dist, .env)
+- [x] `git init` + initial commit
+- [x] Create GitHub repo, push
+- [x] Create `dev` branch, set as default working branch
+- [x] Add `.gitignore` (node_modules, dist, .env)
 
 ### 1.6 Create folder structure
 

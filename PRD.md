@@ -27,6 +27,45 @@ A 5-page responsive static marketing website for JM Purefoods Pty Ltd. Primary g
 
 ---
 
+## UI Design References
+
+### Desktop design
+
+- Warm cream/off-white page background (`#f0ede0`)
+- Olive/sage green hero background with canola field illustration
+- Dark forest green footer (`#1a3d25`) and Why Choose JMP panel (`#1e4a2c`)
+- Organic SVG wave dividers between every section (no straight horizontal lines)
+- Olive branch / leaf PNG decorations on left and right edges of sections
+- Section accent: short green bar (`#2d6a3f`) below section headings
+
+### Mobile design (confirmed from client reference)
+
+Three screens provided:
+
+**Screen 1 — Home (mobile)**
+
+- Navbar: JMP logo left, hamburger icon (≡) right
+- Hero: full-width image background, heading + subheading overlaid, "Get a Quote" (primary) + "Learn More →" (ghost) buttons stacked
+- What We Do: centred heading + green bar, list layout (icon left + title/desc right) — NOT grid
+- Packaging Formats: heading + description stacked, formats as vertical list (icon left + name/size right), "View All Options" button at bottom
+
+**Screen 2 — Process & Industries (mobile)**
+
+- Our Process: centred heading, vertical step list with dashed connector line between steps (icon circle → dashed line → icon circle)
+- Industries We Serve: centred heading, full-width stacked image cards (image top, icon + title + desc below)
+- Why Choose JMP: dark green card, vertical list of 4 items (icon left + label + desc right)
+- Let's Work Together: light cream section, heading + desc + "Get a Quote" button + "Contact Us →" ghost link
+
+**Screen 3 — Mobile nav drawer**
+
+- Full-screen dark green overlay (`#1a3d25`) slides in from right
+- Close (×) button top right
+- Nav items: Home, About Us, Our Services (expandable with sub-items: Toll Packing, Contract Filling, Custom Packaging), Packaging Solutions (expandable: Bottles, Jerry Cans, Drums, IBC Totes), Industries, Quality, Contact Us
+- "Get a Quote" outlined button at bottom of drawer
+- Olive branch leaf decoration bottom-right of drawer
+
+---
+
 ## Tech Stack
 
 | Layer               | Choice             | Reason                                                 |
@@ -45,10 +84,13 @@ A 5-page responsive static marketing website for JM Purefoods Pty Ltd. Primary g
 
 ### 1. Home
 
-- Hero: company tagline + short intro + CTA ("Get in Touch", "Our Services")
-- Stats strip: packaging formats, markets, location, export-ready
-- Service cards: Contract Packaging, Food Service, Private Label
-- Footer CTA strip
+- Hero: company tagline + short intro + CTA ("Get a Quote" primary, "Learn More →" ghost)
+- What We Do: 3 items — Toll Packing, Contract Filling, Custom Packaging
+- Our Process: 4 steps — Get in Touch → Plan & Confirm → Fill & Pack → Ready to Deliver
+- Packaging Formats: Bottles, Jerry Cans, Drums, IBC Totes + "View All Options" CTA
+- Industries We Serve: Food Manufacturers, Food Service & Hospitality, Export & International Brands
+- Why Choose JMP: 4 items — Australian Based, Flexible MOQ, High Quality, Fast Turnaround
+- Let's Work Together: CTA section with "Get a Quote" + "Contact Us →"
 
 ### 2. About
 
@@ -129,15 +171,58 @@ A 5-page responsive static marketing website for JM Purefoods Pty Ltd. Primary g
 
 Mobile-first approach using Tailwind breakpoints (`sm:`, `md:`, `lg:`).
 
-| Section                      | Mobile                     | Desktop                         |
-| ---------------------------- | -------------------------- | ------------------------------- |
-| Navbar                       | Hamburger menu, stacked    | Horizontal links + phone number |
-| Hero                         | Single column, stacked CTA | Split layout with image         |
-| About (Story/Vision/Mission) | Stacked cards              | 3-column grid                   |
-| Products/Services            | 1-col grid                 | 3-col grid                      |
-| Packaging formats            | 2-col grid                 | 5-col grid                      |
-| Contact form                 | Full width, stacked fields | 2-column (form + details)       |
-| Footer                       | Stacked sections           | Multi-column layout             |
+### Breakpoints
+
+| Breakpoint | Width          | Target                     |
+| ---------- | -------------- | -------------------------- |
+| Mobile     | 375px – 767px  | iPhone SE, standard phones |
+| Tablet     | 768px – 1023px | iPad, small laptops        |
+| Desktop    | 1024px+        | Laptops, wide screens      |
+
+### Section-by-section layout
+
+| Section             | Mobile                                                                                   | Desktop                                                   |
+| ------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| Navbar              | Logo left + hamburger (≡) right                                                          | Logo left + horizontal links + "Get a Quote" button right |
+| Mobile nav drawer   | Full-screen dark green overlay, slides from right, expandable sub-menus, leaf decoration | N/A                                                       |
+| Hero                | Full-width bg image, text overlay, stacked CTA buttons                                   | Split: text left, machinery image right                   |
+| What We Do          | Vertical list — icon circle left + title/desc right                                      | 3-column icon card grid                                   |
+| Our Process         | Vertical steps — icon circle + dashed connector line between steps                       | 4-column horizontal row with arrows                       |
+| Packaging Formats   | Vertical list — product image left + name/size right, full-width CTA button              | Split: copy left + 4-col format grid right                |
+| Industries We Serve | Stacked full-width image cards                                                           | 3-column image card grid                                  |
+| Why Choose JMP      | Dark green section, vertical list — icon left + label/desc right                         | Dark green left panel, 2×2 icon grid                      |
+| Let's Work Together | Stacked — heading + desc + primary button + ghost link                                   | Side-by-side with leaf decoration                         |
+| Contact form        | Full width, stacked fields                                                               | 2-column (form left, details right)                       |
+| Footer              | Stacked sections                                                                         | 3-column layout                                           |
+
+### Mobile nav drawer detail
+
+- Triggered by hamburger (≡) icon in navbar
+- Full-screen dark green overlay (`#1a3d25`) slides in from right
+- Close button (×) top right
+- Nav items with expandable accordion sub-menus:
+  - Home
+  - About Us
+  - Our Services ↓ (Toll Packing, Contract Filling, Custom Packaging)
+  - Packaging Solutions ↓ (Bottles, Jerry Cans, Drums, IBC Totes)
+  - Industries
+  - Quality
+  - Contact Us
+- "Get a Quote" outlined button at bottom
+- Olive branch leaf SVG decoration bottom-right corner of drawer
+
+### Wave dividers
+
+- Every section transition uses an SVG wave path — no straight borders
+- Wave `fill` colour always matches the next section's background
+- Wave height: 60–80px, `preserveAspectRatio="none"` for full-width stretch
+- Section backgrounds in order: `#f0ede0` → `#f5f2e8` → `#e8edcc` → `#ffffff` → `#f5f2e8` → `#1e4a2c` / `#f0f4e0` → `#1a3d25`
+
+### Decorative elements
+
+- Olive branch / leaf SVGs: absolutely positioned on left/right edges of hero and select sections
+- `pointer-events: none` on all decorative elements
+- On mobile: leaves scale down or are hidden if they interfere with content
 
 ---
 
@@ -192,15 +277,29 @@ Use `vite-ssg` to pre-render each route into static HTML at build time. This ens
 
 ### Phase 2 — Shared Components
 
-- [ ] Navbar — desktop horizontal + mobile hamburger menu with open/close toggle
+- [ ] Navbar — desktop horizontal + mobile hamburger icon
+- [ ] Mobile nav drawer — full-screen dark green overlay, slide-in animation, expandable accordion sub-menus, leaf decoration, "Get a Quote" button
 - [ ] Footer — links, contact info, ABN/ACN, copyright
-- [ ] Button component (primary + outline variants)
+- [ ] Button component (primary + outline + ghost variants)
 - [ ] Section wrapper / container component
 - [ ] Page hero banner component (reusable across pages)
+- [ ] `WaveDivider` component — reusable SVG wave with configurable `fill`, `height`, and `flip` props
+- [ ] `LeafDecoration` component — absolutely positioned olive branch SVG, configurable side (left/right) and opacity
 
 ### Phase 3 — Page Builds
 
-- [ ] Home page — hero, stats strip, 3 service cards, CTA strip
+- [ ] Home page:
+  - [ ] Hero section (image bg, heading, CTA buttons, leaf decorations)
+  - [ ] Wave divider → What We Do
+  - [ ] What We Do (3 items: Toll Packing, Contract Filling, Custom Packaging)
+  - [ ] Wave divider → Our Process
+  - [ ] Our Process (4 steps with dashed connector on mobile, arrows on desktop)
+  - [ ] Wave divider → Packaging Formats
+  - [ ] Packaging Formats (Bottles, Jerry Cans, Drums, IBC Totes)
+  - [ ] Wave divider → Industries We Serve
+  - [ ] Industries We Serve (3 image cards)
+  - [ ] Wave divider → Why Choose JMP + Let's Work Together
+  - [ ] Why Choose JMP (dark green, 4 items) + Let's Work Together (CTA)
 - [ ] About page — company intro, Story/Mission/Values, Why Choose Us
 - [ ] Contract Packaging page — intro, capabilities grid, formats, private label, CTA
 - [ ] Food Service page — intro, supply list, packaging formats, CTA
@@ -225,11 +324,20 @@ Use `vite-ssg` to pre-render each route into static HTML at build time. This ens
 
 ### Phase 6 — Responsive QA
 
-- [ ] Test navbar hamburger on mobile
-- [ ] Test all grids collapse correctly at 375px / 768px / 1280px
+- [ ] Test hamburger icon triggers drawer correctly on mobile
+- [ ] Test mobile nav drawer slide-in animation and close button
+- [ ] Test expandable sub-menus in mobile nav drawer (Our Services, Packaging Solutions)
+- [ ] Test hero image and text overlay on mobile (375px)
+- [ ] Test What We Do switches from list (mobile) to 3-col grid (desktop)
+- [ ] Test Our Process switches from vertical dashed steps (mobile) to horizontal arrows (desktop)
+- [ ] Test Packaging Formats switches from vertical list (mobile) to split layout (desktop)
+- [ ] Test Industries cards stack correctly on mobile
+- [ ] Test wave dividers render correctly at all screen widths
+- [ ] Test leaf decorations hidden or scaled correctly on mobile
 - [ ] Test contact form usability on mobile
-- [ ] Run Chrome DevTools device emulator across all 5 pages
+- [ ] Run Chrome DevTools device emulator across all 5 pages at 375px, 768px, 1280px
 - [ ] Run Lighthouse mobile audit (target 90+ on Performance and Accessibility)
+- [ ] Test on real iOS (Safari) and Android (Chrome) devices
 
 ### Phase 7 — Content Finalisation
 
@@ -275,6 +383,42 @@ const handleSubmit = async (data) => {
 - Publish directory: `dist`
 - Domain: `jmpurefoods.com.au` (register when ready)
 - SSL: Auto-provisioned by Netlify
+
+## Animation (Framer Motion)
+
+Install: `npm install framer-motion`
+
+| Section                    | Animation                                                        |
+| -------------------------- | ---------------------------------------------------------------- |
+| Navbar                     | Logo + links fade in on load; mobile drawer slides in from right |
+| Hero                       | Badge → heading → subheading → buttons fade up in sequence       |
+| Section headings           | Fade up on scroll into view (`useInView`, `once: true`)          |
+| What We Do items           | Stagger fade up on scroll                                        |
+| Our Process steps          | Stagger fade up on scroll                                        |
+| Packaging format items     | Spring pop-in on scroll                                          |
+| Industry cards             | Stagger fade up on scroll                                        |
+| Why Choose JMP items       | Stagger fade in on scroll                                        |
+| Service / feature cards    | Lift up (`y: -6`) + shadow on hover                              |
+| CTA buttons                | Scale pulse on hover                                             |
+| Page transitions           | Fade in/out via `AnimatePresence` on route change                |
+| Contact form success/error | Slide down on submit                                             |
+
+---
+
+## Colour Palette
+
+| Token         | Hex       | Usage                          |
+| ------------- | --------- | ------------------------------ |
+| Brand green   | `#2d6a3f` | Buttons, icons, accents        |
+| Dark green    | `#1e4a2c` | Why Choose JMP bg              |
+| Footer green  | `#1a3d25` | Footer bg                      |
+| Footer dark   | `#112a1a` | Footer bottom bar              |
+| Hero bg       | `#f0ede0` | Hero section background        |
+| Section cream | `#f5f2e8` | What We Do, Industries bg      |
+| Section sage  | `#e8edcc` | Packaging Formats bg           |
+| CTA bg        | `#f0f4e0` | Let's Work Together bg         |
+| White         | `#ffffff` | Our Process bg, card bg        |
+| Leaf accent   | `#7ab84a` | Why Choose JMP bar, leaf tones |
 
 ---
 

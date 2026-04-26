@@ -129,31 +129,31 @@ public/
 
 ### 2.1 Navbar (`src/components/layout/Navbar.jsx`)
 
-- [ ] Desktop: JMP logo left · uppercase nav links centre · gold "Get a Quote" button right
-- [ ] Mobile: JMP logo left · hamburger (≡) icon right
-- [ ] Sticky `position: sticky; top: 0` with white background
-- [ ] Add subtle shadow on scroll (`window.scrollY > 0`)
-- [ ] Active link highlight using `useLocation()`
-- [ ] Nav links: Home · About Us · Services · Capabilities · Quality · Contact
+- [x] Desktop: JMP logo left · uppercase nav links centre · gold "Get a Quote" button right
+- [x] Mobile: JMP logo left · hamburger (≡) icon right
+- [x] Sticky `position: sticky; top: 0` with white background
+- [x] Add subtle shadow on scroll (`window.scrollY > 0`)
+- [x] Active link highlight using `useLocation()`
+- [x] Nav links: Home · About Us · Services · Capabilities · Quality · Contact
 
 ### 2.2 Mobile nav drawer (`src/components/layout/NavDrawer.jsx`)
 
-- [ ] Full-screen dark green overlay (`#1e4028`)
-- [ ] Framer Motion: `x: "100%" → 0` slide from right, `AnimatePresence`
-- [ ] Close (×) button top right
-- [ ] Nav items (direct links, no accordion needed for this simpler nav)
-- [ ] Gold "Get a Quote" outlined button at bottom
-- [ ] Oil drop / leaf SVG decoration bottom-right corner
-- [ ] Lock body scroll when open (`document.body.style.overflow = 'hidden'`)
-- [ ] Close on route change (`useEffect` on `location`)
+- [x] Full-screen dark green overlay (`#1e4028`)
+- [x] Framer Motion: `x: "100%" → 0` slide from right, `AnimatePresence`
+- [x] Close (×) button top right
+- [x] Nav items (direct links, no accordion needed for this simpler nav)
+- [x] Gold "Get a Quote" outlined button at bottom
+- [x] Oil drop / leaf SVG decoration bottom-right corner
+- [x] Lock body scroll when open (`document.body.style.overflow = 'hidden'`)
+- [x] Close on route change (`useEffect` on `location`)
 
 ### 2.3 Footer (`src/components/layout/Footer.jsx`)
 
-- [ ] Background: `#1a3525`
-- [ ] Desktop: 3-column — brand info · page links · contact details
-- [ ] Mobile: stacked sections
-- [ ] Bottom bar: copyright + location (`#112a1a` bg)
-- [ ] Content: company name, ABN, ACN, address, phone, email, nav links
+- [x] Background: `#1a3525`
+- [x] Desktop: 3-column — brand info · page links · contact details
+- [x] Mobile: stacked sections
+- [x] Bottom bar: copyright + location (`#112a1a` bg)
+- [x] Content: company name, ABN, ACN, address, phone, email, nav links
 
 ### 2.4 Button (`src/components/ui/Button.jsx`)
 

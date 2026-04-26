@@ -8,15 +8,15 @@ A 5-page responsive static marketing website for JM Purefoods Pty Ltd. Primary g
 
 ## Company Details
 
-| Field        | Value                            |
-| ------------ | -------------------------------- |
-| Company Name | JM PUREFOODS PTY LTD             |
-| ABN          | 91 690 274 901                   |
-| ACN          | 690 274 901                      |
-| Address      | 2 Exchange Dr, Pakenham VIC 3810 |
-| Phone        | +61 428 254 866                  |
-| Email        | info@jmpurefoods.com.au          |
-| Logo         | Placeholder — to be provided     |
+| Field        | Value                                                               |
+| ------------ | ------------------------------------------------------------------- |
+| Company Name | JM PUREFOODS PTY LTD                                                |
+| ABN          | 91 690 274 901                                                      |
+| ACN          | 690 274 901                                                         |
+| Address      | 2 Exchange Dr, Pakenham VIC 3810                                    |
+| Phone        | +61 428 254 866                                                     |
+| Email        | info@jmpurefoods.com.au                                             |
+| Logo         | JM + leaf icon, "JM PUREFOODS PTY LTD" text lockup — to be provided |
 
 ---
 
@@ -29,40 +29,59 @@ A 5-page responsive static marketing website for JM Purefoods Pty Ltd. Primary g
 
 ## UI Design References
 
-### Desktop design
+### Visual style (confirmed from latest client design)
 
-- Warm cream/off-white page background (`#f0ede0`)
-- Olive/sage green hero background with canola field illustration
-- Dark forest green footer (`#1a3d25`) and Why Choose JMP panel (`#1e4a2c`)
-- Organic SVG wave dividers between every section (no straight horizontal lines)
-- Olive branch / leaf PNG decorations on left and right edges of sections
-- Section accent: short green bar (`#2d6a3f`) below section headings
+- **Background**: white / very light grey — clean, minimal
+- **Primary colour**: dark forest green (`#2a5c3f`) — headings, navbar, dark section backgrounds
+- **Accent colour**: gold/amber (`#c8960c`) — CTA buttons, icons, oil drop illustration, stat numbers
+- **Logo**: "JMP" bold + green leaf icon, "JM PUREFOODS PTY LTD" subtitle
+- **Nav links**: uppercase, small letter-spacing, lightweight font
+- **CTA button style**: gold/amber fill (`#c8960c`) with white text
+- **Section headings**: large, bold, dark green
+- **Oil drop illustration**: large golden SVG oil drop with splash — hero centrepiece on desktop and mobile
+- **SVG wave**: used only at bottom of dark green "Specialists" section
+- **Hexagonal image frames**: used on hero variant C
+- **No canola field background** — previous design fully replaced
 
-### Mobile design (confirmed from client reference)
+### Desktop hero variants (3 observed)
 
-Three screens provided:
+**Variant A — "Your Trusted Toll Packing Partner"** _(primary)_
 
-**Screen 1 — Home (mobile)**
+- White background
+- Left: large heading + subheading + gold "Our Services" CTA button
+- Right: large golden oil drop SVG illustration with splash
 
-- Navbar: JMP logo left, hamburger icon (≡) right
-- Hero: full-width image background, heading + subheading overlaid, "Get a Quote" (primary) + "Learn More →" (ghost) buttons stacked
-- What We Do: centred heading + green bar, list layout (icon left + title/desc right) — NOT grid
-- Packaging Formats: heading + description stacked, formats as vertical list (icon left + name/size right), "View All Options" button at bottom
+**Variant B — "End-to-End Toll Packing Solutions"**
 
-**Screen 2 — Process & Industries (mobile)**
+- Full-width machinery image top
+- 5-icon capabilities strip below
+- Split: facility photo left + copy + gold CTA right
 
-- Our Process: centred heading, vertical step list with dashed connector line between steps (icon circle → dashed line → icon circle)
-- Industries We Serve: centred heading, full-width stacked image cards (image top, icon + title + desc below)
-- Why Choose JMP: dark green card, vertical list of 4 items (icon left + label + desc right)
-- Let's Work Together: light cream section, heading + desc + "Get a Quote" button + "Contact Us →" ghost link
+**Variant C — "Packed with Care. Delivered with Confidence."**
 
-**Screen 3 — Mobile nav drawer**
+- Left: heading + subheading + gold "Get a Quote" button
+- Right: hexagonal image collage (honey, oil, golden liquid)
+- "Trusted by Leading Brands" greyscale logo strip below
 
-- Full-screen dark green overlay (`#1a3d25`) slides in from right
-- Close (×) button top right
-- Nav items: Home, About Us, Our Services (expandable with sub-items: Toll Packing, Contract Filling, Custom Packaging), Packaging Solutions (expandable: Bottles, Jerry Cans, Drums, IBC Totes), Industries, Quality, Contact Us
-- "Get a Quote" outlined button at bottom of drawer
-- Olive branch leaf decoration bottom-right of drawer
+### Mobile layout (confirmed from client screens)
+
+- Navbar: JMP logo left + hamburger (≡) right
+- Hero: text stacked, oil drop below, full-width gold CTA button
+- Why Choose: stacked icon list
+- Specialists section: dark green card, vertical product list with gold icons, gold CTA button
+- Capabilities: 2-col icon grid
+- Facility split: image top, text below
+- Stats: 2×2 grid
+- Trusted by brands: horizontal scrollable row
+- CTA banner: stacked, full-width button
+
+### Mobile nav drawer
+
+- Full-screen dark green overlay slides in from right
+- Close (×) top right
+- Nav items: Home · About Us · Services · Capabilities · Quality · Contact
+- Gold "Get a Quote" outlined button at bottom
+- Oil drop / leaf SVG decoration bottom-right corner
 
 ---
 
@@ -72,11 +91,30 @@ Three screens provided:
 | ------------------- | ------------------ | ------------------------------------------------------ |
 | Framework           | Vite + React 19    | Familiar stack, fast setup, sufficient for static site |
 | Routing             | React Router v6    | Client-side routing across 5 pages                     |
-| Styling             | Tailwind CSS v4    | Responsive-first, consistent utility classes           |
-| Pre-rendering (SEO) | vite-ssg           | Generates static HTML per route at build time          |
+| Styling             | Tailwind CSS v4    | Mobile-first, CSS-only config via `@theme`             |
+| Pre-rendering (SEO) | vite-ssg           | Static HTML per route at build time                    |
 | Per-page meta tags  | react-helmet-async | Title, description, OG tags per page                   |
-| Contact form        | Formspree          | Zero backend — form submissions sent to email via API  |
+| Animation           | Framer Motion      | Scroll animations, page transitions, hover effects     |
+| Contact form        | Formspree          | Zero backend — submissions to email                    |
 | Deployment          | Netlify            | Free tier, auto SSL, GitHub push deploy                |
+
+---
+
+## Colour Palette
+
+| Token                  | Hex       | Usage                                      |
+| ---------------------- | --------- | ------------------------------------------ |
+| `--color-brand`        | `#2a5c3f` | Headings, navbar, borders, icon strokes    |
+| `--color-brand-mid`    | `#3a7a52` | Hover states, secondary green              |
+| `--color-dark-section` | `#1e4028` | Specialists bg, CTA banner bg              |
+| `--color-footer`       | `#1a3525` | Footer background                          |
+| `--color-gold`         | `#c8960c` | CTA buttons, icons, oil drop, stat numbers |
+| `--color-gold-light`   | `#e8b830` | Icon hover, decorative highlights          |
+| `--color-gold-bg`      | `#fdf6e3` | Light gold tint on alternate sections      |
+| `--color-white`        | `#ffffff` | Page background, cards                     |
+| `--color-off-white`    | `#f8f9f7` | Alternate section backgrounds              |
+| `--color-text-dark`    | `#1a2e1f` | Headings                                   |
+| `--color-text-muted`   | `#5a7060` | Body copy, subtitles                       |
 
 ---
 
@@ -84,92 +122,91 @@ Three screens provided:
 
 ### 1. Home
 
-- Hero: company tagline + short intro + CTA ("Get a Quote" primary, "Learn More →" ghost)
-- What We Do: 3 items — Toll Packing, Contract Filling, Custom Packaging
-- Our Process: 4 steps — Get in Touch → Plan & Confirm → Fill & Pack → Ready to Deliver
-- Packaging Formats: Bottles, Jerry Cans, Drums, IBC Totes + "View All Options" CTA
-- Industries We Serve: Food Manufacturers, Food Service & Hospitality, Export & International Brands
-- Why Choose JMP: 4 items — Australian Based, Flexible MOQ, High Quality, Fast Turnaround
-- Let's Work Together: CTA section with "Get a Quote" + "Contact Us →"
+Sections in order:
 
-### 2. About
+1. **Hero** — heading + subheading + gold CTA + large oil drop SVG
+2. **Why Choose JM Purefoods** — 5-col icon grid (white bg)
+3. **Specialists in Liquid Toll Packing** — dark green section + product icons + gold CTA + SVG wave
+4. **Capabilities** — 5-icon strip (Product Handling, Filling & Capping, Labelling, QC & Testing, Packaging)
+5. **Built for Quality** — split: facility photo left + heading + desc + gold CTA right
+6. **Stats strip** — 10+ · 100+ · 5000+ · 100%
+7. **Trusted by Leading Brands** — greyscale brand logo row
+8. **Let's Build Something Great Together** — dark green CTA banner + gold button + oil drop deco
 
-- Full company introduction text
-- Our Story / Our Mission / Our Values (3-column)
-- Why Choose Us (key differentiators)
+**Hero copy:**
+
+- Heading: "Your Trusted Toll Packing Partner"
+- Subheading: "Premium liquid packing solutions with quality, safety and integrity."
+- CTA: "Our Services" (gold button)
+
+**Why Choose JM Purefoods (5 items):**
+
+- Premium Quality — Strict quality control at every step
+- Food Safety — Certified systems you can trust
+- Advanced Technology — Modern equipment, efficient & reliable
+- Flexible Solutions — Tailored to your business needs
+- Reliable Partnership — Committed to your long-term success
+
+**Specialists section products:**
+
+- Edible Oils · Sauces · Honey · Dressings · Beverages · and more
+
+**Capabilities (5 items):**
+
+- Product Handling & Storage
+- Filling & Capping
+- Labelling & Coding
+- Quality Control & Testing
+- Packaging & Palletising
+
+**Stats:**
+
+- 10+ Years of Experience
+- 100+ Satisfied Clients
+- 5000+ Products Packed Daily
+- 100% Commitment to Quality
+
+### 2. About Us
+
+- Hero banner with facility image
+- Company introduction paragraph
+- Our Story / Our Mission / Our Values (3-column desktop, stacked mobile)
+- Why Choose Us (5 differentiators)
+- Facility overview + "About Our Facility" gold CTA
 
 **Company intro copy:**
 
 > JM Purefoods Pty Ltd is an Australia-based food company focused on edible oil production, packaging, and supply chain solutions. We operate across both local and international markets, offering flexible toll packing services tailored to different customer requirements. Our capabilities include a wide range of packaging formats and sizes, enabling our partners to efficiently bring products to market under their own brands or supply channels. We are committed to delivering consistent quality, operational flexibility, and reliable service across the entire supply chain.
 
-### 3. Contract Packaging
+### 3. Services / Capabilities
 
-- Page intro: _"End-to-end contract packaging solutions for edible oil products"_
-- Core capabilities grid with icons (6 items)
-- Flexible packaging formats section
-- Private label packaging section
-- CTA: Enquire Now → Contact Us
-
-**Core capabilities:**
-
-- Edible oil filling & packing
-- Flexible packaging formats
-- Private label manufacturing support
-- Label application & compliance support
-- Small to bulk production capability
-- Export-ready packaging solutions
-
-**Flexible packaging formats:**
-
-| Format        | Size         |
-| ------------- | ------------ |
-| Glass bottles | 250ml, 500ml |
-| PET bottles   | 2L, 4L, 5L   |
-| Tins          | 4L           |
-
-**Private label packaging:**
-
-- Custom bottle design
-- Label application
-- Brand packaging support
-- Export compliance packaging
+- Hero: "End-to-End Toll Packing Solutions" + full-width machinery image
+- 5 capabilities with icon + title + description
+- Process: 4 steps — Get in Touch → Plan & Confirm → Fill & Pack → Ready to Deliver
+- Packaging formats: Bottles (250ml–5L), Jerry Cans (5L–25L), Drums (20L–200L), IBC Totes (1000L)
+- Private label section
+- CTA → Contact Us
 
 ### 4. Food Service
 
-- Page intro: _"Reliable bulk edible oil supply for food service operations"_
-- Target customers: restaurants, catering businesses, commercial kitchens
-- What we supply (5 items)
-- Food service packaging formats
-- CTA: Enquire Now → Contact Us
-
-**Supply capabilities:**
-
-- Bulk edible oil supply
-- Large format packaging (drums / containers / IBC)
-- Consistent commercial supply
-- Custom order volumes
-- Long-term supply partnerships
-
-**Food service packaging formats:**
-
-| Format               |
-| -------------------- |
-| 10L containers       |
-| 20L containers       |
-| Bag-in-box solutions |
+- Hero: "Reliable bulk edible oil supply"
+- Target customers: restaurants, catering, commercial kitchens
+- Supply capabilities (5 items)
+- Formats: 10L containers, 20L containers, bag-in-box
+- CTA → Contact Us
 
 ### 5. Contact Us
 
+- Hero: "Get in Touch"
 - Enquiry form: Name, Email, Phone (optional), Message, Submit
-- Company contact details: phone, email, address
-- ABN / ACN displayed
+- Company details: phone, email, address, ABN, ACN
 - Google Maps embed (placeholder)
 
 ---
 
 ## Responsive Design
 
-Mobile-first approach using Tailwind breakpoints (`sm:`, `md:`, `lg:`).
+Mobile-first using Tailwind breakpoints (`md:` = 768px, `lg:` = 1024px).
 
 ### Breakpoints
 
@@ -181,189 +218,79 @@ Mobile-first approach using Tailwind breakpoints (`sm:`, `md:`, `lg:`).
 
 ### Section-by-section layout
 
-| Section             | Mobile                                                                                   | Desktop                                                   |
-| ------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| Navbar              | Logo left + hamburger (≡) right                                                          | Logo left + horizontal links + "Get a Quote" button right |
-| Mobile nav drawer   | Full-screen dark green overlay, slides from right, expandable sub-menus, leaf decoration | N/A                                                       |
-| Hero                | Full-width bg image, text overlay, stacked CTA buttons                                   | Split: text left, machinery image right                   |
-| What We Do          | Vertical list — icon circle left + title/desc right                                      | 3-column icon card grid                                   |
-| Our Process         | Vertical steps — icon circle + dashed connector line between steps                       | 4-column horizontal row with arrows                       |
-| Packaging Formats   | Vertical list — product image left + name/size right, full-width CTA button              | Split: copy left + 4-col format grid right                |
-| Industries We Serve | Stacked full-width image cards                                                           | 3-column image card grid                                  |
-| Why Choose JMP      | Dark green section, vertical list — icon left + label/desc right                         | Dark green left panel, 2×2 icon grid                      |
-| Let's Work Together | Stacked — heading + desc + primary button + ghost link                                   | Side-by-side with leaf decoration                         |
-| Contact form        | Full width, stacked fields                                                               | 2-column (form left, details right)                       |
-| Footer              | Stacked sections                                                                         | 3-column layout                                           |
+| Section                 | Mobile                                                        | Desktop                                                           |
+| ----------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Navbar                  | Logo left + hamburger (≡) right                               | Logo left + uppercase nav links + gold "Get a Quote" button right |
+| Mobile nav drawer       | Full-screen dark green, slides from right, gold CTA at bottom | N/A                                                               |
+| Hero                    | Stacked — text top, oil drop SVG below, full-width gold CTA   | Split — text left (50%), oil drop right (50%)                     |
+| Why Choose JM Purefoods | Stacked list (1-col)                                          | 5-column icon grid                                                |
+| Specialists section     | Dark green card, vertical product list, full-width gold CTA   | Dark green band, product icons row, SVG wave bottom               |
+| Capabilities            | 2-col icon grid                                               | 5-col icon row                                                    |
+| Built for Quality split | Image top, text + CTA below                                   | 50/50 — image left, text right                                    |
+| Stats strip             | 2×2 grid                                                      | 4-column horizontal row                                           |
+| Trusted by Brands       | Horizontal scroll                                             | Full-width centred row                                            |
+| CTA banner              | Stacked text + full-width button                              | Split — text left, oil drop deco right                            |
+| Contact form            | Full width, stacked                                           | 2-column (form left, details right)                               |
+| Footer                  | Stacked sections                                              | 3-column layout                                                   |
 
-### Mobile nav drawer detail
+---
 
-- Triggered by hamburger (≡) icon in navbar
-- Full-screen dark green overlay (`#1a3d25`) slides in from right
-- Close button (×) top right
-- Nav items with expandable accordion sub-menus:
-  - Home
-  - About Us
-  - Our Services ↓ (Toll Packing, Contract Filling, Custom Packaging)
-  - Packaging Solutions ↓ (Bottles, Jerry Cans, Drums, IBC Totes)
-  - Industries
-  - Quality
-  - Contact Us
-- "Get a Quote" outlined button at bottom
-- Olive branch leaf SVG decoration bottom-right corner of drawer
+## Animation Plan (Framer Motion)
 
-### Wave dividers
-
-- Every section transition uses an SVG wave path — no straight borders
-- Wave `fill` colour always matches the next section's background
-- Wave height: 60–80px, `preserveAspectRatio="none"` for full-width stretch
-- Section backgrounds in order: `#f0ede0` → `#f5f2e8` → `#e8edcc` → `#ffffff` → `#f5f2e8` → `#1e4a2c` / `#f0f4e0` → `#1a3d25`
-
-### Decorative elements
-
-- Olive branch / leaf SVGs: absolutely positioned on left/right edges of hero and select sections
-- `pointer-events: none` on all decorative elements
-- On mobile: leaves scale down or are hidden if they interfere with content
+| Element              | Animation                                             |
+| -------------------- | ----------------------------------------------------- |
+| Page transition      | Fade in/out `AnimatePresence` on route change (0.25s) |
+| Hero heading         | Fade up on load                                       |
+| Hero subheading      | Fade up, 0.15s delay                                  |
+| Hero CTA button      | Fade up, 0.3s delay                                   |
+| Oil drop SVG         | Scale in + subtle float loop (y oscillation)          |
+| Why Choose items     | Stagger fade up on scroll                             |
+| Specialists products | Stagger pop-in on scroll                              |
+| Capabilities icons   | Stagger fade up on scroll                             |
+| Stats numbers        | Count-up on scroll into view                          |
+| Brand logos          | Stagger fade in on scroll                             |
+| CTA banner           | Fade up on scroll                                     |
+| Gold CTA buttons     | `whileHover` scale 1.03                               |
+| Cards / icons        | `whileHover` y: -4 lift                               |
+| Mobile nav drawer    | `x: "100%" → 0` slide from right                      |
+| Form success/error   | `y: -10 → 0` slide down                               |
 
 ---
 
 ## SEO Setup
 
-### Approach
-
-Use `vite-ssg` to pre-render each route into static HTML at build time. This ensures Google receives real HTML content without needing to execute JavaScript.
-
 ### Build output structure
 
 ```
 /dist
-  index.html                        ← Home
-  about/index.html                  ← About
-  contract-packaging/index.html     ← Contract Packaging
-  food-service/index.html           ← Food Service
-  contact-us/index.html             ← Contact Us
+  index.html                ← Home
+  about/index.html          ← About Us
+  services/index.html       ← Services / Capabilities
+  food-service/index.html   ← Food Service
+  contact/index.html        ← Contact Us
 ```
 
-### Per-page meta tags (react-helmet-async)
+### Per-page meta tags
 
-| Page               | Title                               | Description                                                                                                        |
-| ------------------ | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Home               | JM Purefoods Pty Ltd                | Australian edible oil production, contract packaging and food service supply. Pakenham, VIC.                       |
-| About              | About Us \| JM Purefoods            | Learn about JM Purefoods — an Australian food company focused on edible oil production and supply chain solutions. |
-| Contract Packaging | Contract Packaging \| JM Purefoods  | End-to-end edible oil contract packaging in Australia. Glass, PET, tins from 250ml to 5L. Private label support.   |
-| Food Service       | Food Service Supply \| JM Purefoods | Bulk edible oil supply for restaurants, catering, and commercial kitchens across Australia.                        |
-| Contact Us         | Contact Us \| JM Purefoods          | Get in touch with JM Purefoods Pty Ltd. Located in Pakenham VIC. ABN 91 690 274 901.                               |
+| Page         | Title                                   | Description                                                                                              |
+| ------------ | --------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Home         | JM Purefoods Pty Ltd                    | Premium liquid toll packing in Australia. Edible oils, sauces, honey, dressings and more. Pakenham, VIC. |
+| About        | About Us \| JM Purefoods                | Australian toll packing specialists focused on quality, food safety and flexible solutions.              |
+| Services     | Services & Capabilities \| JM Purefoods | End-to-end toll packing — filling, capping, labelling, QC and packaging.                                 |
+| Food Service | Food Service Supply \| JM Purefoods     | Bulk edible oil supply for restaurants, catering, and commercial kitchens across Australia.              |
+| Contact      | Contact Us \| JM Purefoods              | Get in touch with JM Purefoods Pty Ltd. Pakenham VIC. ABN 91 690 274 901.                                |
 
 ### Additional SEO files
 
 - `public/robots.txt` — allow all, reference sitemap
-- `public/sitemap.xml` — list all 5 page URLs
+- `public/sitemap.xml` — all 5 page URLs
 - Submit sitemap to Google Search Console after deploy
 
 ---
 
-## Task List
-
-### Phase 1 — Setup
-
-- [ ] Initialise Vite + React 19 project
-- [ ] Install Tailwind CSS v4
-- [ ] Install React Router v6
-- [ ] Install vite-ssg + react-helmet-async
-- [ ] Set up GitHub repo (`main` / `dev` / `feature/*` branching)
-- [ ] Create folder structure: `src/pages/`, `src/components/`, `src/assets/`
-- [ ] Add placeholder logo in `src/assets/`
-- [ ] Configure global fonts and colour palette (Tailwind config / CSS variables)
-- [ ] Set up routes in `routes.js` and update `main.jsx` to use `ViteSSG`
-
-### Phase 2 — Shared Components
-
-- [ ] Navbar — desktop horizontal + mobile hamburger icon
-- [ ] Mobile nav drawer — full-screen dark green overlay, slide-in animation, expandable accordion sub-menus, leaf decoration, "Get a Quote" button
-- [ ] Footer — links, contact info, ABN/ACN, copyright
-- [ ] Button component (primary + outline + ghost variants)
-- [ ] Section wrapper / container component
-- [ ] Page hero banner component (reusable across pages)
-- [ ] `WaveDivider` component — reusable SVG wave with configurable `fill`, `height`, and `flip` props
-- [ ] `LeafDecoration` component — absolutely positioned olive branch SVG, configurable side (left/right) and opacity
-
-### Phase 3 — Page Builds
-
-- [ ] Home page:
-  - [ ] Hero section (image bg, heading, CTA buttons, leaf decorations)
-  - [ ] Wave divider → What We Do
-  - [ ] What We Do (3 items: Toll Packing, Contract Filling, Custom Packaging)
-  - [ ] Wave divider → Our Process
-  - [ ] Our Process (4 steps with dashed connector on mobile, arrows on desktop)
-  - [ ] Wave divider → Packaging Formats
-  - [ ] Packaging Formats (Bottles, Jerry Cans, Drums, IBC Totes)
-  - [ ] Wave divider → Industries We Serve
-  - [ ] Industries We Serve (3 image cards)
-  - [ ] Wave divider → Why Choose JMP + Let's Work Together
-  - [ ] Why Choose JMP (dark green, 4 items) + Let's Work Together (CTA)
-- [ ] About page — company intro, Story/Mission/Values, Why Choose Us
-- [ ] Contract Packaging page — intro, capabilities grid, formats, private label, CTA
-- [ ] Food Service page — intro, supply list, packaging formats, CTA
-- [ ] Contact Us page — enquiry form + contact details block
-
-### Phase 4 — SEO
-
-- [ ] Add `<Helmet>` with title, description, OG tags to each page
-- [ ] Add canonical URL per page
-- [ ] Create `public/robots.txt`
-- [ ] Create `public/sitemap.xml` with all 5 URLs
-- [ ] Verify pre-rendering output with `npx vite-ssg build`
-- [ ] Submit sitemap to Google Search Console after deploy
-
-### Phase 5 — Form & Email Integration
-
-- [ ] Create Formspree account and form endpoint
-- [ ] Wire contact form to Formspree endpoint
-- [ ] Add client-side validation (required fields, email format) using React Hook Form + Zod
-- [ ] Add success / error feedback UI after submission
-- [ ] End-to-end test: form → email arrives at info@jmpurefoods.com.au
-
-### Phase 6 — Responsive QA
-
-- [ ] Test hamburger icon triggers drawer correctly on mobile
-- [ ] Test mobile nav drawer slide-in animation and close button
-- [ ] Test expandable sub-menus in mobile nav drawer (Our Services, Packaging Solutions)
-- [ ] Test hero image and text overlay on mobile (375px)
-- [ ] Test What We Do switches from list (mobile) to 3-col grid (desktop)
-- [ ] Test Our Process switches from vertical dashed steps (mobile) to horizontal arrows (desktop)
-- [ ] Test Packaging Formats switches from vertical list (mobile) to split layout (desktop)
-- [ ] Test Industries cards stack correctly on mobile
-- [ ] Test wave dividers render correctly at all screen widths
-- [ ] Test leaf decorations hidden or scaled correctly on mobile
-- [ ] Test contact form usability on mobile
-- [ ] Run Chrome DevTools device emulator across all 5 pages at 375px, 768px, 1280px
-- [ ] Run Lighthouse mobile audit (target 90+ on Performance and Accessibility)
-- [ ] Test on real iOS (Safari) and Android (Chrome) devices
-
-### Phase 7 — Content Finalisation
-
-- [ ] Swap logo placeholder with real logo (when ready)
-- [ ] Add product / service photos when provided
-- [ ] Optimise all images (WebP format, compress before upload)
-- [ ] Review all copy with client
-
-### Phase 8 — Deploy
-
-- [ ] Deploy to Netlify (connect GitHub repo for auto-deploy on push)
-- [ ] Connect domain `jmpurefoods.com.au` (when registered)
-- [ ] Verify SSL certificate (auto-handled by Netlify)
-- [ ] Cross-browser test (Chrome, Safari, Firefox, Edge)
-- [ ] Test on real iOS and Android devices
-
----
-
-## Formspree Integration (Contact Form)
-
-No backend required. Formspree handles form submissions and forwards them to the configured email address.
+## Formspree Integration
 
 ```jsx
-// ContactUs.jsx
-const [status, setStatus] = useState("idle");
-
 const handleSubmit = async (data) => {
   const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
     method: "POST",
@@ -382,43 +309,8 @@ const handleSubmit = async (data) => {
 - Build command: `npx vite-ssg build`
 - Publish directory: `dist`
 - Domain: `jmpurefoods.com.au` (register when ready)
-- SSL: Auto-provisioned by Netlify
-
-## Animation (Framer Motion)
-
-Install: `npm install framer-motion`
-
-| Section                    | Animation                                                        |
-| -------------------------- | ---------------------------------------------------------------- |
-| Navbar                     | Logo + links fade in on load; mobile drawer slides in from right |
-| Hero                       | Badge → heading → subheading → buttons fade up in sequence       |
-| Section headings           | Fade up on scroll into view (`useInView`, `once: true`)          |
-| What We Do items           | Stagger fade up on scroll                                        |
-| Our Process steps          | Stagger fade up on scroll                                        |
-| Packaging format items     | Spring pop-in on scroll                                          |
-| Industry cards             | Stagger fade up on scroll                                        |
-| Why Choose JMP items       | Stagger fade in on scroll                                        |
-| Service / feature cards    | Lift up (`y: -6`) + shadow on hover                              |
-| CTA buttons                | Scale pulse on hover                                             |
-| Page transitions           | Fade in/out via `AnimatePresence` on route change                |
-| Contact form success/error | Slide down on submit                                             |
-
----
-
-## Colour Palette
-
-| Token         | Hex       | Usage                          |
-| ------------- | --------- | ------------------------------ |
-| Brand green   | `#2d6a3f` | Buttons, icons, accents        |
-| Dark green    | `#1e4a2c` | Why Choose JMP bg              |
-| Footer green  | `#1a3d25` | Footer bg                      |
-| Footer dark   | `#112a1a` | Footer bottom bar              |
-| Hero bg       | `#f0ede0` | Hero section background        |
-| Section cream | `#f5f2e8` | What We Do, Industries bg      |
-| Section sage  | `#e8edcc` | Packaging Formats bg           |
-| CTA bg        | `#f0f4e0` | Let's Work Together bg         |
-| White         | `#ffffff` | Our Process bg, card bg        |
-| Leaf accent   | `#7ab84a` | Why Choose JMP bar, leaf tones |
+- SSL: auto-provisioned by Netlify
+- Redirect: `www` → apex domain
 
 ---
 

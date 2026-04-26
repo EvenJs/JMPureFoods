@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import data from "../../data/siteData.json";
+import { ButtonLink } from "../ui/Button";
 import NavDrawer from "./NavDrawer";
+import data from "../../data/siteData.json";
 
 export default function Navbar() {
   const location = useLocation();
@@ -40,7 +41,7 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop nav */}
+          {/* Desktop nav links */}
           <nav className="hidden md:flex items-center gap-6">
             {data.navigation.map((item) => {
               const isActive = location.pathname === item.path;
@@ -49,7 +50,8 @@ export default function Navbar() {
                   key={item.path}
                   to={item.path}
                   className={`
-                    text-xs font-medium uppercase tracking-widest transition-colors duration-200
+                    text-xs font-medium uppercase tracking-widest
+                    transition-colors duration-200
                     ${
                       isActive
                         ? "text-brand border-b-2 border-brand pb-0.5"
@@ -64,12 +66,11 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA */}
-          <Link
-            to="/contact"
-            className="hidden md:inline-flex items-center bg-gold hover:bg-gold-light text-white text-xs font-semibold uppercase tracking-widest px-5 py-2.5 rounded transition-colors duration-200"
-          >
-            Get a Quote
-          </Link>
+          <div className="hidden md:block">
+            <ButtonLink to="/contact" variant="gold" size="sm">
+              Get a Quote
+            </ButtonLink>
+          </div>
 
           {/* Mobile hamburger */}
           <button
@@ -84,7 +85,6 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Nav drawer — outside header so it overlays full screen */}
       <NavDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
     </>
   );

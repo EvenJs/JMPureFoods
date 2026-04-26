@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { ButtonLink } from "../ui/Button";
 import data from "../../data/siteData.json";
 
 interface NavDrawerProps {
@@ -54,9 +55,14 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
                 <div className="w-8 h-8 bg-white/10 rounded-md flex items-center justify-center">
                   <span className="text-white text-xs font-bold">JMP</span>
                 </div>
-                <span className="text-white text-sm font-semibold tracking-wide">
-                  JM PUREFOODS
-                </span>
+                <div className="flex flex-col leading-none">
+                  <span className="text-white font-bold text-sm tracking-wide">
+                    JM PUREFOODS
+                  </span>
+                  <span className="text-white/50 text-[10px] tracking-widest uppercase">
+                    PTY LTD
+                  </span>
+                </div>
               </Link>
 
               {/* Close button */}
@@ -84,7 +90,7 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
             <div className="h-px bg-white/10 mx-6" />
 
             {/* Nav links */}
-            <nav className="flex flex-col px-6 py-8 gap-1 flex-1">
+            <nav className="flex flex-col px-6 py-8 gap-1 flex-1 overflow-y-auto">
               {data.navigation.map((item, index) => {
                 const isActive = location.pathname === item.path;
                 return (
@@ -100,7 +106,11 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
                       className={`
                         block py-3 text-base font-medium uppercase tracking-widest
                         border-b border-white/10 transition-colors duration-200
-                        ${isActive ? "text-gold-light" : "text-white/80 hover:text-white"}
+                        ${
+                          isActive
+                            ? "text-gold-light"
+                            : "text-white/80 hover:text-white"
+                        }
                       `}
                     >
                       {item.label}
@@ -126,14 +136,15 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
                 />
               </svg>
 
-              {/* Get a Quote button */}
-              <Link
+              {/* Get a Quote — using ButtonLink */}
+              <ButtonLink
                 to="/contact"
-                onClick={onClose}
-                className="relative block text-center border border-gold text-gold hover:bg-gold hover:text-white text-sm font-semibold uppercase tracking-widest px-6 py-3 rounded transition-colors duration-200"
+                variant="outline-gold"
+                size="md"
+                className="relative w-full justify-center"
               >
                 Get a Quote
-              </Link>
+              </ButtonLink>
             </div>
           </motion.div>
         </>

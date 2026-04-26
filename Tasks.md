@@ -157,24 +157,24 @@ public/
 
 ### 2.4 Button (`src/components/ui/Button.jsx`)
 
-- [ ] `variant` prop: `gold` (fill `#c8960c`) | `outline-gold` | `outline-white` | `ghost`
-- [ ] `size` prop: `sm` | `md` | `lg`
-- [ ] Framer Motion `whileHover={{ scale: 1.03 }}`
-- [ ] Forward `onClick`, `type`, `className`, `children`
+- [x] `variant` prop: `gold` (fill `#c8960c`) | `outline-gold` | `outline-white` | `ghost`
+- [x] `size` prop: `sm` | `md` | `lg`
+- [x] Framer Motion `whileHover={{ scale: 1.03 }}`
+- [x] Forward `onClick`, `type`, `className`, `children`
 
 ### 2.5 SectionHeader (`src/components/ui/SectionHeader.jsx`)
 
-- [ ] `title` + optional `subtitle` props
-- [ ] Green underline bar accent (3px × 24px, `#2a5c3f`)
-- [ ] `align` prop: `left` | `center`
-- [ ] Framer Motion fade-up on scroll
+- [x] `title` + optional `subtitle` props
+- [x] Green underline bar accent (3px × 24px, `#2a5c3f`)
+- [x] `align` prop: `left` | `center`
+- [x] Framer Motion fade-up on scroll
 
 ### 2.6 WaveDivider (`src/components/layout/WaveDivider.jsx`)
 
-- [ ] SVG wave, `preserveAspectRatio="none"`, full width
-- [ ] Props: `fill` (colour of shape), `height` (default 60), `flip` (boolean)
-- [ ] Used at bottom of Specialists dark green section (white wave)
-- [ ] `lineHeight: 0` wrapper
+- [x] SVG wave, `preserveAspectRatio="none"`, full width
+- [x] Props: `fill` (colour of shape), `height` (default 60), `flip` (boolean)
+- [x] Used at bottom of Specialists dark green section (white wave)
+- [x] `lineHeight: 0` wrapper
 
 ### 2.7 OilDropSVG (`src/components/ui/OilDropSVG.jsx`)
 
@@ -185,9 +185,9 @@ public/
 
 ### 2.8 AnimatedSection (`src/components/ui/AnimatedSection.jsx`)
 
-- [ ] Wraps children with `fadeUp` variant on scroll
-- [ ] `useInView({ once: true, margin: "-80px" })`
-- [ ] `delay` prop for offset control
+- [x] Wraps children with `fadeUp` variant on scroll
+- [x] `useInView({ once: true, margin: "-80px" })`
+- [x] `delay` prop for offset control
 
 ### 2.9 Stagger components (`src/components/ui/Stagger.jsx`)
 

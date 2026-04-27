@@ -17,7 +17,7 @@ export default function Footer() {
     <footer>
       {/* Main footer */}
       <div
-        className="px-6 py-14  bg-cover bg-center bg-no-repeat"
+        className="px-6 py-14 bg-cover bg-bottom bg-no-repeat"
         style={{ backgroundImage: `url(${data.footer.image})` }}
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">

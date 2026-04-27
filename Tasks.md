@@ -217,61 +217,61 @@ public/
 
 #### 3.1.2 Our Solutions section (`src/components/sections/OurSolutions.tsx`)
 
-- [ ] White / off-white background
-- [ ] Centred `SectionHeader`: "Our Solutions" + subtitle "Two solutions. One commitment to quality and reliability."
-- [ ] Desktop: 2-column card grid · Mobile: stacked
-- [ ] **Card 1 — Contract Packaging:**
+- [x] White / off-white background
+- [x] Centred `SectionHeader`: "Our Solutions" + subtitle "Two solutions. One commitment to quality and reliability."
+- [x] Desktop: 2-column card grid · Mobile: stacked
+- [x] **Card 1 — Contract Packaging:**
   - Product image (bottles) on left inside card
   - Gold icon top left
   - Heading: "CONTRACT PACKAGING"
   - Description: "End-to-end toll packing solutions for edible oils. From filling to finished product — we bring your brand to life."
   - "Learn More →" ghost link → `/services`
-- [ ] **Card 2 — Food Service:**
+- [x] **Card 2 — Food Service:**
   - Product image (bottles) on right inside card
   - Gold icon top left
   - Heading: "FOOD SERVICE"
   - Description: "Reliable bulk edible oil supply solutions for restaurants, catering, and food service businesses."
   - "Learn More →" ghost link → `/food-service`
-- [ ] Cards have border, rounded corners, subtle shadow
-- [ ] `StaggerContainer` + `StaggerItem` fade-up on scroll
+- [x] Cards have border, rounded corners, subtle shadow
+- [x] `StaggerContainer` + `StaggerItem` fade-up on scroll
 
 #### 3.1.3 Packaging Capability Overview (`src/components/sections/PackagingCapability.tsx`)
 
-- [ ] White background
-- [ ] Centred `SectionHeader`: "Packaging Capability Overview" + subtitle "From retail sizes to bulk supply — we deliver the right packaging solution for your market."
-- [ ] Desktop: 5-col image row · Mobile: horizontal scroll or 2-col grid
-- [ ] 5 items — each: product image top + label below + size/type caption:
+- [x] White background
+- [x] Centred `SectionHeader`: "Packaging Capability Overview" + subtitle "From retail sizes to bulk supply — we deliver the right packaging solution for your market."
+- [x] Desktop: 5-col image row · Mobile: horizontal scroll or 2-col grid
+- [x] 5 items — each: product image top + label below + size/type caption:
   - 250ml–5L · Retail Bottles
   - 10L–20L · Commercial Packs
   - 200L Drums
   - IBC Containers
   - Bulk Supply
-- [ ] Images: placeholder photos (white background product shots style)
-- [ ] `StaggerContainer` + `StaggerItem` pop-in on scroll
+- [x] Images: placeholder photos (white background product shots style)
+- [x] `StaggerContainer` + `StaggerItem` pop-in on scroll
 
 #### 3.1.4 Why Partner with JM Purefoods (`src/components/sections/WhyPartner.tsx`)
 
-- [ ] White / off-white background
-- [ ] Centred `SectionHeader`: "Why Partner with JM Purefoods"
-- [ ] Desktop: 5-column icon grid · Mobile: stacked list
-- [ ] Each item: green outline circle icon + bold title + small desc
-- [ ] 5 items:
+- [x] White / off-white background
+- [x] Centred `SectionHeader`: "Why Partner with JM Purefoods"
+- [x] Desktop: 5-column icon grid · Mobile: stacked list
+- [x] Each item: green outline circle icon + bold title + small desc
+- [x] 5 items:
   - Premium Quality — Strict quality control at every step
   - Food Safety — Certified systems you can trust
   - Advanced Technology — Modern equipment, efficient & reliable
   - Flexible Solutions — Tailored to your business needs
   - Reliable Partnership — Committed to your long-term success
-- [ ] `StaggerContainer` + `StaggerItem` fade-up on scroll
+- [x] `StaggerContainer` + `StaggerItem` fade-up on scroll
 
 #### 3.1.5 CTA Banner (`src/components/sections/CTABanner.tsx`)
 
-- [ ] Background: `#1e4028` (dark green)
-- [ ] Desktop: text left + oil drop image right
-- [ ] Mobile: stacked — text + full-width gold button
-- [ ] White heading: "Let's build the right solution for your business."
-- [ ] Gold "Get a Quote" button → `/contact`
-- [ ] Oil drop image: `src/assets/images/oil-drop.png` positioned bottom-right
-- [ ] `AnimatedSection` fade-up on scroll
+- [x] Background: `#1e4028` (dark green)
+- [x] Desktop: text left + oil drop image right
+- [x] Mobile: stacked — text + full-width gold button
+- [x] White heading: "Let's build the right solution for your business."
+- [x] Gold "Get a Quote" button → `/contact`
+- [x] Oil drop image: `src/assets/images/oil-drop.png` positioned bottom-right
+- [x] `AnimatedSection` fade-up on scroll
 
 ---
 

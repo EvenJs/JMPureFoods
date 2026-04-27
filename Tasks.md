@@ -191,13 +191,13 @@ public/
 
 ### 2.9 Stagger components (`src/components/ui/Stagger.jsx`)
 
-- [ ] `StaggerContainer`: `staggerChildren: 0.1`
-- [ ] `StaggerItem`: fade-up child variant
+- [x] `StaggerContainer`: `staggerChildren: 0.1`
+- [x] `StaggerItem`: fade-up child variant
 
 ### 2.10 Page transition wrapper
 
-- [ ] `AnimatePresence mode="wait"` in `App.jsx` around `<Routes>`
-- [ ] Each page: `opacity: 0 → 1`, duration 0.25s
+- [x] `AnimatePresence mode="wait"` in `App.jsx` around `<Routes>`
+- [x] Each page: `opacity: 0 → 1`, duration 0.25s
 
 ---
 
@@ -207,13 +207,13 @@ public/
 
 #### 3.1.1 Hero section (`src/components/sections/Hero.jsx`)
 
-- [ ] Desktop: white bg, text left (max-w ~50%), `OilDropSVG` right
-- [ ] Mobile: text stacked, oil drop below, full-width gold CTA
-- [ ] Heading: "Your Trusted Toll Packing Partner"
-- [ ] Subheading: "Premium liquid packing solutions with quality, safety and integrity."
-- [ ] Gold "Our Services" button → `/services`
-- [ ] Framer Motion: stagger — heading → subheading → button (fade up)
-- [ ] Oil drop: scale-in + float loop
+- [x] Desktop: white bg, text left (max-w ~50%), `OilDropSVG` right
+- [x] Mobile: text stacked, oil drop below, full-width gold CTA
+- [x] Heading: "Your Trusted Toll Packing Partner"
+- [x] Subheading: "Premium liquid packing solutions with quality, safety and integrity."
+- [x] Gold "Our Services" button → `/services`
+- [x] Framer Motion: stagger — heading → subheading → button (fade up)
+- [x] Oil drop: scale-in + float loop
 
 #### 3.1.2 Why Choose JM Purefoods (`src/components/sections/WhyChoose.jsx`)
 

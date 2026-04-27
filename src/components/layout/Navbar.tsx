@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { ButtonLink } from "../ui/Button";
 import NavDrawer from "./NavDrawer";
 import data from "../../data/siteData.json";
+// import logo from "../../assets/images/Logo1.png";
 
 export default function Navbar() {
   const location = useLocation();
@@ -26,10 +27,8 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
-            <div className="w-9 h-9 bg-brand rounded-md flex items-center justify-center">
-              <span className="text-white text-sm font-bold leading-none">
-                JMP
-              </span>
+            <div className="w-20 h-full items-center justify-center">
+              <img src={data.company.logo} alt="Logo" />
             </div>
             <div className="flex flex-col leading-none">
               <span className="text-brand font-bold text-sm tracking-wide">

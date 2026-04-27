@@ -8,9 +8,9 @@
     "address": "2 Exchange Dr, Pakenham VIC 3810",
     "phone": "+61 428 254 866",
     "email": "info@jmpurefoods.com.au",
-    "logo": "/assets/logo.svg",
+    "logo": "/assets/images/Logo1.png",
     "tagline": "Your Trusted Toll Packing Partner",
-    "description": "JM Purefoods Pty Ltd is an Australia-based food company focused on edible oil production, packaging, and supply chain solutions. We operate across both local and international markets, offering flexible toll packing services tailored to different customer requirements."
+    "description": "JM Purefoods Pty Ltd is an Australia-based food company focused on edible oil production, packaging, and supply chain solutions."
   },
 
   "colours": {
@@ -29,19 +29,18 @@
   "navigation": [
     { "label": "Home", "path": "/" },
     { "label": "About Us", "path": "/about" },
-    { "label": "Services", "path": "/services" },
-    { "label": "Capabilities", "path": "/services#capabilities" },
-    { "label": "Quality", "path": "/services#quality" },
-    { "label": "Contact", "path": "/contact" }
+    { "label": "Contract Packaging", "path": "/services" },
+    { "label": "Food Service", "path": "/food-service" },
+    { "label": "Contact Us", "path": "/contact" }
   ],
 
   "pages": {
     "home": {
       "seo": {
         "title": "JM Purefoods Pty Ltd",
-        "description": "Premium liquid toll packing in Australia. Edible oils, sauces, honey, dressings and more. Based in Pakenham, VIC.",
+        "description": "Premium liquid toll packing in Australia. Contract packaging and food service supply. Based in Pakenham, VIC.",
         "ogTitle": "JM Purefoods Pty Ltd",
-        "ogDescription": "Premium liquid toll packing in Australia. Edible oils, sauces, honey, dressings and more.",
+        "ogDescription": "Premium liquid toll packing in Australia. Contract packaging and food service supply.",
         "canonical": "https://jmpurefoods.com.au/"
       },
 
@@ -49,11 +48,54 @@
         "heading": "Your Trusted Toll Packing Partner",
         "subheading": "Premium liquid packing solutions with quality, safety and integrity.",
         "cta": { "label": "Our Services", "path": "/services" },
-        "oilDrop": true
+        "image": "/assets/images/hero-bg.png"
       },
 
-      "whyChoose": {
-        "heading": "Why Choose JM Purefoods",
+      "ourSolutions": {
+        "heading": "Our Solutions",
+        "subtitle": "Two solutions. One commitment to quality and reliability.",
+        "items": [
+          {
+            "icon": "package",
+            "title": "CONTRACT PACKAGING",
+            "description": "End-to-end toll packing solutions for edible oils. From filling to finished product — we bring your brand to life.",
+            "cta": { "label": "Learn More", "path": "/services" },
+            "image": "/assets/images/solution1.png"
+          },
+          {
+            "icon": "truck",
+            "title": "FOOD SERVICE",
+            "description": "Reliable bulk edible oil supply solutions for restaurants, catering, and food service businesses.",
+            "cta": { "label": "Learn More", "path": "/food-service" },
+            "image": "/assets/images/solution2.png"
+          }
+        ]
+      },
+
+      "packagingCapability": {
+        "heading": "Packaging Capability Overview",
+        "subtitle": "From retail sizes to bulk supply — we deliver the right packaging solution for your market.",
+        "items": [
+          {
+            "label": "Retail Bottles",
+            "size": "250ml – 5L",
+            "image": "/assets/images/package1.png"
+          },
+          {
+            "label": "Commercial Packs",
+            "size": "10L – 20L",
+            "image": "/assets/images/package2.png"
+          },
+          {
+            "label": "Drums",
+            "size": "200L",
+            "image": "/assets/images/package3.png"
+          }
+        ]
+      },
+
+      "whyPartner": {
+        "heading": "Why Partner with JM Purefoods",
         "items": [
           {
             "icon": "shield-check",
@@ -83,76 +125,10 @@
         ]
       },
 
-      "specialists": {
-        "heading": "Specialists in Liquid Toll Packing",
-        "subheading": "We co-pack a wide range of liquid products with the highest standards of quality and efficiency.",
-        "cta": { "label": "View Capabilities", "path": "/services" },
-        "products": [
-          { "icon": "droplet", "label": "Edible Oils" },
-          { "icon": "flask", "label": "Sauces" },
-          { "icon": "drop", "label": "Honey" },
-          { "icon": "salad", "label": "Dressings" },
-          { "icon": "cup", "label": "Beverages" },
-          { "icon": "more", "label": "and more" }
-        ]
-      },
-
-      "capabilities": {
-        "heading": "Our Capabilities",
-        "items": [
-          { "icon": "package", "title": "Product Handling & Storage" },
-          { "icon": "droplets", "title": "Filling & Capping" },
-          { "icon": "tag", "title": "Labelling & Coding" },
-          { "icon": "microscope", "title": "Quality Control & Testing" },
-          { "icon": "box", "title": "Packaging & Palletising" }
-        ]
-      },
-
-      "builtForQuality": {
-        "heading": "Built for Quality. Focused on You.",
-        "description": "Our facility is designed to meet the highest food safety standards, ensuring your products are in safe hands.",
-        "cta": { "label": "About Our Facility", "path": "/about" },
-        "image": "/assets/facility-placeholder.jpg"
-      },
-
-      "stats": [
-        { "value": "10+", "suffix": "", "label": "Years of Experience" },
-        { "value": "100+", "suffix": "", "label": "Satisfied Clients" },
-        { "value": "5000+", "suffix": "", "label": "Products Packed Daily" },
-        { "value": "100", "suffix": "%", "label": "Commitment to Quality" }
-      ],
-
-      "trustedBrands": {
-        "heading": "Trusted by Leading Brands",
-        "logos": [
-          {
-            "name": "Brand 1",
-            "image": "/assets/brands/brand-1-placeholder.png"
-          },
-          {
-            "name": "Brand 2",
-            "image": "/assets/brands/brand-2-placeholder.png"
-          },
-          {
-            "name": "Brand 3",
-            "image": "/assets/brands/brand-3-placeholder.png"
-          },
-          {
-            "name": "Brand 4",
-            "image": "/assets/brands/brand-4-placeholder.png"
-          },
-          {
-            "name": "Brand 5",
-            "image": "/assets/brands/brand-5-placeholder.png"
-          }
-        ]
-      },
-
       "ctaBanner": {
-        "heading": "Let's Build Something Great Together",
-        "subheading": "Ready to take your product to the next level? We're here to help.",
-        "cta": { "label": "Contact Us", "path": "/contact" },
-        "oilDrop": true
+        "heading": "Let's build the right solution for your business.",
+        "cta": { "label": "Get a Quote", "path": "/contact" },
+        "image": "/assets/images/oil-drop.png"
       }
     },
 
@@ -167,37 +143,37 @@
       "hero": {
         "heading": "About JM Purefoods",
         "subheading": "An Australia-based food company focused on edible oil production, packaging, and supply chain solutions.",
-        "image": "/assets/about-hero-placeholder.jpg"
+        "image": "/assets/images/about-hero.jpg"
       },
       "intro": "JM Purefoods Pty Ltd is an Australia-based food company focused on edible oil production, packaging, and supply chain solutions. We operate across both local and international markets, offering flexible toll packing services tailored to different customer requirements. Our capabilities include a wide range of packaging formats and sizes, enabling our partners to efficiently bring products to market under their own brands or supply channels. We are committed to delivering consistent quality, operational flexibility, and reliable service across the entire supply chain.",
       "pillars": [
         {
           "title": "Our Story",
-          "body": "Founded in Australia, JM Purefoods was established to provide reliable and flexible edible oil production and packaging services to businesses of all sizes — from emerging brands to established distributors."
+          "body": "Founded in Australia, JM Purefoods was established to provide reliable and flexible edible oil production and packaging services to businesses of all sizes."
         },
         {
           "title": "Our Mission",
-          "body": "To deliver consistent quality, operational flexibility, and reliable service across the entire edible oil supply chain — helping our partners bring their products to market efficiently."
+          "body": "To deliver consistent quality, operational flexibility, and reliable service across the entire edible oil supply chain."
         },
         {
           "title": "Our Values",
-          "body": "We pride ourselves on transparency, quality, and long-term partnerships. Every order, every client, and every product is handled with the same level of care and commitment."
+          "body": "We pride ourselves on transparency, quality, and long-term partnerships. Every order and every product is handled with the same level of care."
         }
       ]
     },
 
     "services": {
       "seo": {
-        "title": "Services & Capabilities | JM Purefoods Pty Ltd",
+        "title": "Contract Packaging | JM Purefoods Pty Ltd",
         "description": "End-to-end toll packing solutions including filling, capping, labelling, quality control and packaging.",
-        "ogTitle": "Services & Capabilities | JM Purefoods",
-        "ogDescription": "End-to-end toll packing solutions — filling, capping, labelling, QC and packaging.",
+        "ogTitle": "Contract Packaging | JM Purefoods",
+        "ogDescription": "End-to-end toll packing — filling, capping, labelling, QC and packaging.",
         "canonical": "https://jmpurefoods.com.au/services"
       },
       "hero": {
         "heading": "End-to-End Toll Packing Solutions",
         "subheading": "From bulk to shelf-ready. We handle it all for you.",
-        "image": "/assets/services-hero-placeholder.jpg"
+        "image": "/assets/images/services-hero.jpg"
       },
       "process": {
         "heading": "Our Process",
@@ -224,31 +200,6 @@
           }
         ]
       },
-      "packagingFormats": {
-        "heading": "Packaging Formats",
-        "items": [
-          {
-            "label": "Bottles",
-            "size": "250ml – 5L",
-            "image": "/assets/formats/bottles-placeholder.png"
-          },
-          {
-            "label": "Jerry Cans",
-            "size": "5L – 25L",
-            "image": "/assets/formats/jerrycans-placeholder.png"
-          },
-          {
-            "label": "Drums",
-            "size": "20L – 200L",
-            "image": "/assets/formats/drums-placeholder.png"
-          },
-          {
-            "label": "IBC Totes",
-            "size": "1000L",
-            "image": "/assets/formats/ibc-placeholder.png"
-          }
-        ]
-      },
       "privateLabel": {
         "heading": "Private Label Packaging",
         "intro": "We support clients in developing their own branded edible oil packaging solutions.",
@@ -272,9 +223,9 @@
       "hero": {
         "heading": "Reliable Bulk Edible Oil Supply",
         "subheading": "Consistent supply, cost efficiency, and reliable logistics for food service operations.",
-        "image": "/assets/food-service-hero-placeholder.jpg"
+        "image": "/assets/images/food-service-hero.jpg"
       },
-      "intro": "We supply edible oil solutions in bulk formats for food service industries including restaurants, catering businesses, and commercial kitchens. Our focus is on consistent supply, cost efficiency, and reliable logistics.",
+      "intro": "We supply edible oil solutions in bulk formats for food service industries including restaurants, catering businesses, and commercial kitchens.",
       "targetCustomers": [
         "Restaurants",
         "Catering businesses",
@@ -294,17 +245,17 @@
         {
           "size": "10L",
           "type": "Container",
-          "image": "/assets/formats/10l-placeholder.png"
+          "image": "/assets/images/packaging/10l.png"
         },
         {
           "size": "20L",
           "type": "Container",
-          "image": "/assets/formats/20l-placeholder.png"
+          "image": "/assets/images/packaging/20l.png"
         },
         {
           "size": "Bulk",
           "type": "Bag-in-box",
-          "image": "/assets/formats/bib-placeholder.png"
+          "image": "/assets/images/packaging/bib.png"
         }
       ]
     },
@@ -382,15 +333,16 @@
 
   "footer": {
     "tagline": "Premium liquid toll packing solutions with quality, safety and integrity.",
+    "image": "/assets/images/footer-wave.png",
     "columns": [
       {
         "heading": "Pages",
         "links": [
           { "label": "Home", "path": "/" },
           { "label": "About Us", "path": "/about" },
-          { "label": "Services", "path": "/services" },
+          { "label": "Contract Packaging", "path": "/services" },
           { "label": "Food Service", "path": "/food-service" },
-          { "label": "Contact", "path": "/contact" }
+          { "label": "Contact Us", "path": "/contact" }
         ]
       },
       {
@@ -399,7 +351,7 @@
           { "label": "Toll Packing", "path": "/services" },
           { "label": "Contract Filling", "path": "/services" },
           { "label": "Custom Packaging", "path": "/services" },
-          { "label": "Private Label", "path": "/services#private-label" },
+          { "label": "Private Label", "path": "/services" },
           { "label": "Food Service Supply", "path": "/food-service" }
         ]
       },

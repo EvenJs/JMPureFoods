@@ -215,67 +215,63 @@ public/
 - [x] Framer Motion: stagger — heading → subheading → button (fade up)
 - [x] Oil drop: scale-in + float loop
 
-#### 3.1.2 Why Choose JM Purefoods (`src/components/sections/WhyChoose.jsx`)
+#### 3.1.2 Our Solutions section (`src/components/sections/OurSolutions.tsx`)
 
 - [ ] White / off-white background
-- [ ] Centred `SectionHeader`: "Why Choose JM Purefoods"
-- [ ] Desktop: 5-column grid · Mobile: 1-col stacked list
-- [ ] Each item: circle icon (green outline SVG) + bold title + small desc
-- [ ] 5 items: Premium Quality · Food Safety · Advanced Technology · Flexible Solutions · Reliable Partnership
-- [ ] `StaggerContainer` + `StaggerItem` fade-up
+- [ ] Centred `SectionHeader`: "Our Solutions" + subtitle "Two solutions. One commitment to quality and reliability."
+- [ ] Desktop: 2-column card grid · Mobile: stacked
+- [ ] **Card 1 — Contract Packaging:**
+  - Product image (bottles) on left inside card
+  - Gold icon top left
+  - Heading: "CONTRACT PACKAGING"
+  - Description: "End-to-end toll packing solutions for edible oils. From filling to finished product — we bring your brand to life."
+  - "Learn More →" ghost link → `/services`
+- [ ] **Card 2 — Food Service:**
+  - Product image (bottles) on right inside card
+  - Gold icon top left
+  - Heading: "FOOD SERVICE"
+  - Description: "Reliable bulk edible oil supply solutions for restaurants, catering, and food service businesses."
+  - "Learn More →" ghost link → `/food-service`
+- [ ] Cards have border, rounded corners, subtle shadow
+- [ ] `StaggerContainer` + `StaggerItem` fade-up on scroll
 
-#### 3.1.3 Specialists section (`src/components/sections/Specialists.jsx`)
+#### 3.1.3 Packaging Capability Overview (`src/components/sections/PackagingCapability.tsx`)
+
+- [ ] White background
+- [ ] Centred `SectionHeader`: "Packaging Capability Overview" + subtitle "From retail sizes to bulk supply — we deliver the right packaging solution for your market."
+- [ ] Desktop: 5-col image row · Mobile: horizontal scroll or 2-col grid
+- [ ] 5 items — each: product image top + label below + size/type caption:
+  - 250ml–5L · Retail Bottles
+  - 10L–20L · Commercial Packs
+  - 200L Drums
+  - IBC Containers
+  - Bulk Supply
+- [ ] Images: placeholder photos (white background product shots style)
+- [ ] `StaggerContainer` + `StaggerItem` pop-in on scroll
+
+#### 3.1.4 Why Partner with JM Purefoods (`src/components/sections/WhyPartner.tsx`)
+
+- [ ] White / off-white background
+- [ ] Centred `SectionHeader`: "Why Partner with JM Purefoods"
+- [ ] Desktop: 5-column icon grid · Mobile: stacked list
+- [ ] Each item: green outline circle icon + bold title + small desc
+- [ ] 5 items:
+  - Premium Quality — Strict quality control at every step
+  - Food Safety — Certified systems you can trust
+  - Advanced Technology — Modern equipment, efficient & reliable
+  - Flexible Solutions — Tailored to your business needs
+  - Reliable Partnership — Committed to your long-term success
+- [ ] `StaggerContainer` + `StaggerItem` fade-up on scroll
+
+#### 3.1.5 CTA Banner (`src/components/sections/CTABanner.tsx`)
 
 - [ ] Background: `#1e4028` (dark green)
-- [ ] White heading: "Specialists in Liquid Toll Packing"
-- [ ] White subheading copy
-- [ ] 6 product icons (gold outline): Edible Oils · Sauces · Honey · Dressings · Beverages · and more
-- [ ] Desktop: icon row · Mobile: vertical list with gold icons
-- [ ] Gold "View Capabilities" button → `/services`
-- [ ] `WaveDivider` at bottom (fill white, so it flows into next section)
-- [ ] `StaggerContainer` on icons
-
-#### 3.1.4 Capabilities strip (`src/components/sections/Capabilities.jsx`)
-
-- [ ] White / off-white background
-- [ ] Centred `SectionHeader`: "Our Capabilities"
-- [ ] Desktop: 5-col icon row · Mobile: 2-col grid
-- [ ] Each item: green outline icon + 2-line title
-- [ ] 5 items: Product Handling & Storage · Filling & Capping · Labelling & Coding · Quality Control & Testing · Packaging & Palletising
-- [ ] `StaggerContainer` + `StaggerItem`
-
-#### 3.1.5 Built for Quality split (`src/components/sections/BuiltForQuality.jsx`)
-
-- [ ] Desktop: 50/50 split — facility photo left, text right
-- [ ] Mobile: image top, text below
-- [ ] Right/bottom: heading "Built for Quality. Focused on You." + desc + gold "About Our Facility" button → `/about`
-- [ ] Image: placeholder, `object-cover`, rounded corners
-- [ ] Framer Motion: image fade-in left, text fade-in right on scroll
-
-#### 3.1.6 Stats strip (`src/components/sections/StatsStrip.jsx`)
-
-- [ ] Light gold bg (`#fdf6e3`) or white
-- [ ] Desktop: 4-col row · Mobile: 2×2 grid
-- [ ] Each stat: large gold number + dark green label below
-- [ ] 4 stats: 10+ Years of Experience · 100+ Satisfied Clients · 5000+ Products Packed Daily · 100% Commitment to Quality
-- [ ] Count-up animation on scroll into view (Framer Motion `useInView` + JS counter)
-
-#### 3.1.7 Trusted by Leading Brands (`src/components/sections/TrustedBrands.jsx`)
-
-- [ ] Centred `SectionHeader`: "Trusted by Leading Brands"
-- [ ] 5 greyscale brand logo placeholders (circle outlines)
-- [ ] Desktop: single row · Mobile: horizontal scroll
-- [ ] `StaggerContainer` fade-in
-
-#### 3.1.8 CTA banner (`src/components/sections/CTABanner.jsx`)
-
-- [ ] Background: `#1e4028`
-- [ ] Desktop: text left + `OilDropSVG` right (smaller, decorative)
+- [ ] Desktop: text left + oil drop image right
 - [ ] Mobile: stacked — text + full-width gold button
-- [ ] White heading: "Let's Build Something Great Together"
-- [ ] White subheading: "Ready to take your product to the next level? We're here to help."
-- [ ] Gold "Contact Us" button → `/contact`
-- [ ] Fade-up on scroll
+- [ ] White heading: "Let's build the right solution for your business."
+- [ ] Gold "Get a Quote" button → `/contact`
+- [ ] Oil drop image: `src/assets/images/oil-drop.png` positioned bottom-right
+- [ ] `AnimatedSection` fade-up on scroll
 
 ---
 
@@ -287,8 +283,7 @@ public/
   - Our Story
   - Our Mission
   - Our Values
-- [ ] `WhyChoose` section (reuse component from Home)
-- [ ] `BuiltForQuality` section (reuse from Home)
+- [ ] `WhyPartner` section (reuse component from Home)
 - [ ] `CTABanner` (reuse from Home)
 
 ---
@@ -296,17 +291,12 @@ public/
 ### 3.3 Services page (`src/pages/Services.jsx`)
 
 - [ ] Hero: full-width machinery image + "End-to-End Toll Packing Solutions" overlay
-- [ ] `Capabilities` section (reuse component, with extended descriptions)
 - [ ] Process steps: 4-step horizontal (desktop) / vertical dashed (mobile):
   1. Get in Touch
   2. Plan & Confirm
   3. Fill & Pack
   4. Ready to Deliver
-- [ ] Packaging formats: 4-tile grid
-  - Bottles (250ml–5L)
-  - Jerry Cans (5L–25L)
-  - Drums (20L–200L)
-  - IBC Totes (1000L)
+- [ ] `PackagingCapability` section (reuse from Home)
 - [ ] Private label section: heading + 4 features
 - [ ] `CTABanner` (reuse)
 
@@ -318,7 +308,6 @@ public/
 - [ ] Intro paragraph + target customers callout
 - [ ] Supply capabilities list (5 items with green icons)
 - [ ] Food service formats: 3-tile grid (10L · 20L · Bag-in-box)
-- [ ] `StatsStrip` (reuse)
 - [ ] `CTABanner` (reuse)
 
 ---

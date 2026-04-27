@@ -16,7 +16,10 @@ export default function Footer() {
   return (
     <footer>
       {/* Main footer */}
-      <div className="px-6 py-14" style={{ backgroundColor: "#1a3525" }}>
+      <div
+        className="px-6 py-14  bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${data.footer.image})` }}
+      >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Column 1 — Brand info */}
           <div>

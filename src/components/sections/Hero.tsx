@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ButtonLink } from "../ui/Button";
-import heroBg from "../../assets/images/hero-bg.jpg";
+// import heroBg from "../../assets/images/hero-bg.jpg";
 import data from "../../data/siteData.json";
 
 const { hero } = data.pages.home;
@@ -11,15 +11,12 @@ export default function Hero() {
       {/* Full-width background image — both mobile and desktop */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        style={{ backgroundImage: `url(${data.pages.home.hero.image})` }}
       />
 
       {/* Overlay — lighter on right so image shows through, stronger on left for text */}
       <div
-        className="absolute inset-0
-        bg-gradient-to-r
-        from-white/95 via-white/60 to-white/20
-        md:from-white/90 md:via-white/50 md:to-white/10
+        className="absolute 
       "
       />
 

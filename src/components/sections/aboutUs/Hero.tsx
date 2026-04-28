@@ -10,8 +10,6 @@ export default function AboutHero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${hero.image})` }}
       />
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/45" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-16 w-full">
@@ -21,15 +19,15 @@ export default function AboutHero() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-lg"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-3">
+          <h1 className="text-4xl md:text-5xl font-bold text-brand leading-tight mb-3">
             {hero.heading}
           </h1>
           {/* Gold bar */}
           <div className="w-8 h-0.5 bg-gold rounded-full mb-4" />
-          <p className="text-white font-semibold text-base mb-2">
+          <p className="text-brand font-semibold text-base mb-2">
             {hero.tagline}
           </p>
-          <p className="text-white/70 text-sm leading-relaxed">
+          <p className="text-brand/70 text-sm leading-relaxed">
             {hero.subheading}
           </p>
         </motion.div>

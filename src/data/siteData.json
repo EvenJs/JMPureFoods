@@ -95,32 +95,57 @@
       },
 
       "whyPartner": {
-        "heading": "Why Partner with JM Purefoods",
+        "label": "WHY PARTNER WITH JM PUREFOODS",
+        "heading": "Five Reasons to Work With Us",
+        "subtitle": "We are committed to delivering exceptional value through quality, flexibility, efficiency, safety and strong partnerships.",
         "items": [
           {
-            "icon": "shield-check",
+            "number": "01",
+            "image": "/assets/images/reason-1.png",
             "title": "Premium Quality",
-            "description": "Strict quality control at every step."
+            "paragraphs": [
+              "Quality is at the heart of everything we do.",
+              "We maintain rigorous quality control processes across all production stages to ensure every product meets the highest standards.",
+              "Our commitment to excellence means your brand is always in safe hands."
+            ]
           },
           {
-            "icon": "leaf",
-            "title": "Food Safety",
-            "description": "Certified systems you can trust."
-          },
-          {
-            "icon": "cpu",
-            "title": "Advanced Technology",
-            "description": "Modern equipment, efficient & reliable."
-          },
-          {
-            "icon": "settings",
+            "number": "02",
+            "image": "/assets/images/reason-2.png",
             "title": "Flexible Solutions",
-            "description": "Tailored to your business needs."
+            "paragraphs": [
+              "We understand that every client has different requirements.",
+              "Our flexible production setup supports a wide range of packaging formats, sizes, and order volumes.",
+              "From small retail packaging to bulk industrial formats and custom private label solutions, we adapt to your business needs."
+            ]
           },
           {
-            "icon": "handshake",
-            "title": "Reliable Partnership",
-            "description": "Committed to your long-term success."
+            "number": "03",
+            "image": "/assets/images/reason-3.png",
+            "title": "Cost Effectiveness",
+            "paragraphs": [
+              "Our efficient operational model helps deliver cost-effective packaging and supply solutions without compromising quality.",
+              "Through streamlined processes and strong supply chain coordination, we help you optimise costs and improve overall efficiency."
+            ]
+          },
+          {
+            "number": "04",
+            "image": "/assets/images/reason-4.png",
+            "title": "Food Safety",
+            "paragraphs": [
+              "Food safety is at the core of everything we do.",
+              "Our processes are aligned with strict food safety and compliance requirements to ensure product integrity and consumer safety.",
+              "We maintain clean production environments, full traceability, and adherence to regulatory standards."
+            ]
+          },
+          {
+            "number": "05",
+            "image": "/assets/images/reason-5.png",
+            "title": "Strong Partnerships",
+            "paragraphs": [
+              "We believe in building long-term relationships based on trust, transparency, and mutual growth.",
+              "Our team works closely with each partner to understand their goals and deliver solutions that create lasting value."
+            ]
           }
         ]
       },

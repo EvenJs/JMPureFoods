@@ -1,45 +1,19 @@
-import AnimatedSection from "../components/ui/AnimatedSection";
-import { StaggerContainer, StaggerItem } from "../components/ui/Stagger";
+import AboutHero from "../components/sections/aboutUs/Hero";
+import AboutSection from "../components/sections/aboutUs/About";
+import WhyPartnerStrip from "../components/sections/aboutUs/WhyPartnerStrip";
+import data from "../data/siteData.json";
 
 export default function About() {
-  const items = [
-    "Premium Quality",
-    "Food Safety",
-    "Advanced Technology",
-    "Flexible Solutions",
-    "Reliable Partnership",
-  ];
-
+  const { sections } = data.pages.about;
   return (
-    <div className="flex flex-col gap-20 p-10">
-      {/* AnimatedSection — single block fade up */}
-      <AnimatedSection>
-        <div className="bg-off-white p-8 rounded-lg">
-          <p className="text-text-dark font-semibold">
-            This block fades up when scrolled into view
-          </p>
-        </div>
-      </AnimatedSection>
-
-      {/* AnimatedSection with delay */}
-      <AnimatedSection delay={0.2}>
-        <div className="bg-off-white p-8 rounded-lg">
-          <p className="text-text-dark font-semibold">
-            This block fades up 0.2s later
-          </p>
-        </div>
-      </AnimatedSection>
-
-      {/* StaggerContainer — children animate one by one */}
-      <StaggerContainer className="grid grid-cols-2 md:grid-cols-5 gap-4">
-        {items.map((item) => (
-          <StaggerItem key={item}>
-            <div className="bg-brand text-white text-sm font-semibold p-4 rounded-lg text-center">
-              {item}
-            </div>
-          </StaggerItem>
+    <>
+      <AboutHero />
+      <div className="divide-y divide-gray-100">
+        {sections.map((section, index) => (
+          <AboutSection key={section.number} section={section} index={index} />
         ))}
-      </StaggerContainer>
-    </div>
+      </div>
+      <WhyPartnerStrip />
+    </>
   );
 }

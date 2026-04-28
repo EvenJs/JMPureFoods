@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { ButtonLink } from "../ui/Button";
-// import heroBg from "../../assets/images/hero-bg.jpg";
+
 import data from "../../data/siteData.json";
 
 const { hero } = data.pages.home;
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[560px] md:min-h-[680px] flex items-center overflow-hidden">
+    <section className="relative min-h-140 md:min-h-170 flex items-center overflow-hidden">
       {/* Full-width background image — both mobile and desktop */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

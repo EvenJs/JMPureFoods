@@ -141,25 +141,69 @@
         "canonical": "https://jmpurefoods.com.au/about"
       },
       "hero": {
-        "heading": "About JM Purefoods",
-        "subheading": "An Australia-based food company focused on edible oil production, packaging, and supply chain solutions.",
-        "image": "/assets/images/about-hero.jpg"
+        "heading": "About Us",
+        "tagline": "Clean. Consistent. Trusted.",
+        "subheading": "Food solutions built on quality, delivered with care.",
+        "image": "/assets/images/about-hero.png"
       },
-      "intro": "JM Purefoods Pty Ltd is an Australia-based food company focused on edible oil production, packaging, and supply chain solutions. We operate across both local and international markets, offering flexible toll packing services tailored to different customer requirements. Our capabilities include a wide range of packaging formats and sizes, enabling our partners to efficiently bring products to market under their own brands or supply channels. We are committed to delivering consistent quality, operational flexibility, and reliable service across the entire supply chain.",
-      "pillars": [
+      "sections": [
         {
-          "title": "Our Story",
-          "body": "Founded in Australia, JM Purefoods was established to provide reliable and flexible edible oil production and packaging services to businesses of all sizes."
+          "number": "01",
+          "heading": "Who We Are",
+          "image": "/assets/images/about-1.png",
+          "imagePosition": "left",
+          "paragraphs": [
+            "JM PUREFOODS is an Australia-based food solutions provider specializing in clean, high-quality edible oils and natural products for the local market.",
+            "With a strong understanding of Australian standards and supply expectations, we integrate trusted sourcing with streamlined local operations, delivering consistency, clarity, and dependable supply."
+          ]
         },
         {
-          "title": "Our Mission",
-          "body": "To deliver consistent quality, operational flexibility, and reliable service across the entire edible oil supply chain."
+          "number": "02",
+          "heading": "What We Do",
+          "image": "/assets/images/about-2.png",
+          "imagePosition": "right",
+          "paragraphs": [
+            "We provide end-to-end supply solutions across multiple formats, from bulk supply to industrial and retail packaging, as well as OEM and private label production",
+            "Built around customization, flexibility, and efficiency, our approach allows us to adapt quickly to different business models, volume requirements, and brand needs, ensuring each solution is precise, scalable, and market-ready."
+          ]
         },
         {
-          "title": "Our Values",
-          "body": "We pride ourselves on transparency, quality, and long-term partnerships. Every order and every product is handled with the same level of care."
+          "number": "03",
+          "heading": "Our Philosophy",
+          "image": "/assets/images/about-3.png",
+          "imagePosition": "left",
+          "paragraphs": [
+            "We believe food supply should be both refined and reliable.",
+            "Guided by clean sourcing principles and operational discipline, we focus on simplifying complexity, creating seamless pathways from production to shelf",
+            "At JM PUREFOODS, we are committed to delivering not just products, but a consistent, efficient, and trusted supply experience for our partners."
+          ]
         }
-      ]
+      ],
+      "whyPartner": {
+        "heading": "Why Partner with JM Purefoods?",
+        "items": [
+          {
+            "icon": "globe",
+            "title": "Australian Based",
+            "description": "Local expertise with global sourcing standards."
+          },
+          {
+            "icon": "shield-check",
+            "title": "Quality Driven",
+            "description": "Committed to clean, high-quality products you can trust."
+          },
+          {
+            "icon": "layers",
+            "title": "End-to-End Solutions",
+            "description": "From sourcing to shelf — we handle it all."
+          },
+          {
+            "icon": "users",
+            "title": "Partner Focused",
+            "description": "Your success is our priority. Let's grow together."
+          }
+        ]
+      }
     },
 
     "services": {

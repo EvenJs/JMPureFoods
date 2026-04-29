@@ -5,7 +5,7 @@ import Footer from "./components/layout/Footer";
 import PageWrapper from "./components/ui/PageWrapper";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Services from "./pages/Services";
+import PackageService from "./pages/PackageServices";
 import FoodService from "./pages/FoodService";
 import ContactUs from "./pages/ContactUs";
 
@@ -38,7 +38,7 @@ export default function App() {
               path="/services"
               element={
                 <PageWrapper>
-                  <Services />
+                  <PackageService />
                 </PageWrapper>
               }
             />

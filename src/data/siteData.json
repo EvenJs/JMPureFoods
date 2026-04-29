@@ -240,44 +240,123 @@
         "canonical": "https://jmpurefoods.com.au/services"
       },
       "hero": {
-        "heading": "End-to-End Toll Packing Solutions",
-        "subheading": "From bulk to shelf-ready. We handle it all for you.",
-        "image": "/assets/images/services-hero.jpg"
+        "heading": "Contract Packaging Solutions",
+        "subheading": "End-to-end toll packing solutions for edible oils. We handle everything from bulk to finished product.",
+        "cta": { "label": "Get a Quote", "path": "/contact" },
+        "image": "/assets/images/packageService/services-hero.png"
+      },
+      "whatWeDo": {
+        "label": "WHAT WE DO",
+        "heading": "Contract Packaging Solutions",
+        "description": "Flexible, scalable solutions for growing brands.",
+        "cta": { "label": "Get in touch", "path": "/contact" },
+        "slides": [
+          {
+            "image": "/assets/images/packageService/slide-1.png",
+            "title": "Precision Filling",
+            "description": "High-accuracy filling for various bottle and container sizes."
+          },
+          {
+            "image": "/assets/images/packageService/slide-2.png",
+            "title": "Flexible Packaging Formats",
+            "description": "Wide range of packaging options to suit your product needs."
+          },
+          {
+            "image": "/assets/images/packageService/slide-3.png",
+            "title": "Packaging",
+            "description": "Professional capping, labelling, and secondary packaging solutions for a complete finished product."
+          },
+          {
+            "image": "/assets/images/packageService/slide-4.png",
+            "title": "Carton Packaging",
+            "description": "Tailored carton solutions to protect and present your products."
+          },
+          {
+            "image": "/assets/images/packageService/slide-5.png",
+            "title": "Private Label",
+            "description": "Support for your private label development and growth."
+          },
+          {
+            "image": "/assets/images/packageService/slide-6.png",
+            "title": "Export Ready",
+            "description": "Packaging and documentation for international markets."
+          }
+        ]
+      },
+      "packagingFormats": {
+        "label": "PACKAGING FORMATS",
+        "heading": "Supported by Flexible Packaging Formats",
+        "subtitle": "From filling to final packaging, we offer flexible format options to match your product and market positioning.",
+        "items": [
+          {
+            "image": "/assets/images/packageService/glass-bottles.png",
+            "icon": "bottle",
+            "title": "Glass Bottles",
+            "description": "Premium retail positioning",
+            "sizes": ["250ml", "500ml"]
+          },
+          {
+            "image": "/assets/images/packageService/pet-bottles.png",
+            "icon": "bottle",
+            "title": "PET Bottles",
+            "description": "Flexible & cost-efficient volumes",
+            "sizes": ["750ml", "2L", "4L", "5L"]
+          },
+          {
+            "image": "/assets/images/packageService/tin-drums.png",
+            "icon": "drum",
+            "title": "Tin Drums",
+            "description": "Bulk & industrial supply",
+            "sizes": ["10L", "20L"]
+          }
+        ]
+      },
+      "privateLabel": {
+        "heading": "Private Label Support",
+        "description": "We help you build your brand with end-to-end private label solutions.",
+        "image": "/assets/images/packageService/private-label.png",
+        "features": [
+          "Custom branding & design",
+          "Label application",
+          "Retail-ready packaging",
+          "Market-specific packaging solutions"
+        ]
       },
       "process": {
         "heading": "Our Process",
         "steps": [
           {
             "number": 1,
-            "title": "Get in Touch",
-            "description": "Tell us about your product and packaging needs."
+            "title": "Inquiry",
+            "description": "Tell us your needs"
           },
           {
             "number": 2,
-            "title": "Plan & Confirm",
-            "description": "We propose the best solution and confirm your requirements."
+            "title": "Specification Review",
+            "description": "We confirm specs and requirements"
           },
           {
             "number": 3,
-            "title": "Fill & Pack",
-            "description": "Our team fills, packs and checks every detail."
+            "title": "Sample / Confirmation",
+            "description": "Sample approval and final confirmation"
           },
           {
             "number": 4,
-            "title": "Ready to Deliver",
-            "description": "Your products are ready for dispatch, on time."
+            "title": "Production & QC",
+            "description": "We produce to your standards with strict quality control"
+          },
+          {
+            "number": 5,
+            "title": "Delivery",
+            "description": "On-time delivery worldwide"
           }
         ]
       },
-      "privateLabel": {
-        "heading": "Private Label Packaging",
-        "intro": "We support clients in developing their own branded edible oil packaging solutions.",
-        "features": [
-          "Custom bottle design",
-          "Label application",
-          "Brand packaging support",
-          "Export compliance packaging"
-        ]
+      "ctaBanner": {
+        "heading": "Need a Custom Packaging Solution?",
+        "description": "From 250ml retail bottles to 20L tin drums, we can tailor a packaging program for your market.",
+        "cta": { "label": "Request a Quote", "path": "/contact" },
+        "image": "/assets/images/packageService/cta-bg.png"
       }
     },
 

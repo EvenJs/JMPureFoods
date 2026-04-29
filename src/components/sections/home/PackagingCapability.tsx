@@ -1,6 +1,6 @@
-import SectionHeader from "../ui/SectionHeader";
-import { StaggerContainer, StaggerItem } from "../ui/Stagger";
-import data from "../../data/siteData.json";
+import SectionHeader from "@/components/ui/SectionHeader";
+import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
+import data from "@/data/siteData.json";
 
 const { packagingCapability } = data.pages.home;
 

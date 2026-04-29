@@ -1,6 +1,6 @@
-import Icon from "../../ui/Icons";
-import { StaggerContainer, StaggerItem } from "../../ui/Stagger";
-import data from "../../../data/siteData.json";
+import Icon from "@/components/ui/Icons";
+import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
+import data from "@/data/siteData.json";
 
 const { whyPartner } = data.pages.about;
 

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ButtonLink } from "../ui/Button";
-import NavDrawer from "./NavDrawer";
-import data from "../../data/siteData.json";
-// import logo from "../../assets/images/Logo1.png";
+
+import { ButtonLink } from "@/components/ui/Button";
+import NavDrawer from "@/components/layout/NavDrawer";
+import data from "@/data/siteData.json";
 
 export default function Navbar() {
   const location = useLocation();

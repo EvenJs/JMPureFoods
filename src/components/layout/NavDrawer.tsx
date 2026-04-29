@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { ButtonLink } from "../ui/Button";
-import data from "../../data/siteData.json";
+
+import { ButtonLink } from "@/components/ui/Button";
+import data from "@/data/siteData.json";
 
 interface NavDrawerProps {
   open: boolean;

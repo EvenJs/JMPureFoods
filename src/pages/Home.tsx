@@ -1,7 +1,7 @@
-import Hero from "../components/sections/Hero";
-import OurSolutions from "../components/sections/OurSolutions";
-import PackagingCapability from "../components/sections/PackagingCapability";
-import WhyPartner from "../components/sections/WhyPartner";
+import Hero from "@/components/sections/home/Hero";
+import OurSolutions from "@/components/sections/home/OurSolutions";
+import PackagingCapability from "@/components/sections/home/PackagingCapability";
+import WhyPartner from "@/components/sections/home/WhyPartner";
 
 export default function Home() {
   return (

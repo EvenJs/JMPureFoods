@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import data from "../../../data/siteData.json";
+
+import data from "@/data/siteData.json";
 
 export default function AboutHero() {
   const { hero } = data.pages.about;

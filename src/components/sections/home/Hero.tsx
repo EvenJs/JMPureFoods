@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { ButtonLink } from "../ui/Button";
 
-import data from "../../data/siteData.json";
+import { ButtonLink } from "@/components/ui/Button";
+import data from "@/data/siteData.json";
 
 const { hero } = data.pages.home;
 

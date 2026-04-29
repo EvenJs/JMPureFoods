@@ -277,14 +277,14 @@ public/
 
 ### 3.2 About Us page (`src/pages/About.jsx`)
 
-- [ ] Hero banner: facility image + "About JM Purefoods" heading
-- [ ] `AnimatedSection`: company intro paragraph
-- [ ] 3-column pillars desktop / stacked mobile:
+- [x] Hero banner: facility image + "About JM Purefoods" heading
+- [x] `AnimatedSection`: company intro paragraph
+- [x] 3-column pillars desktop / stacked mobile:
   - Our Story
   - Our Mission
   - Our Values
-- [ ] `WhyPartner` section (reuse component from Home)
-- [ ] `CTABanner` (reuse from Home)
+- [x] `WhyPartner` section (reuse component from Home)
+- [x] `CTABanner` (reuse from Home)
 
 ---
 

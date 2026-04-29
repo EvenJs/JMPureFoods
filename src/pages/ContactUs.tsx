@@ -1,5 +1,5 @@
-import Button, { ButtonLink } from "../components/ui/Button";
-import SectionHeader from "../components/ui/SectionHeader";
+import Button, { ButtonLink } from "@/components/ui/Button";
+import SectionHeader from "@/components/ui/SectionHeader";
 
 export default function ContactUs() {
   return (

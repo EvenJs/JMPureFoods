@@ -1,46 +1,8 @@
 import { Link } from "react-router-dom";
-import SectionHeader from "../ui/SectionHeader";
-import { StaggerContainer, StaggerItem } from "../ui/Stagger";
-import data from "../../data/siteData.json";
-// import type { JSX } from "react";
 
-// // Inline SVG icons keyed by icon name from siteData
-// function SolutionIcon({ name }: { name: string }) {
-//   const icons: Record<string, JSX.Element> = {
-//     package: (
-//       <svg
-//         width="24"
-//         height="24"
-//         viewBox="0 0 24 24"
-//         fill="none"
-//         stroke="currentColor"
-//         strokeWidth="1.5"
-//         strokeLinecap="round"
-//       >
-//         <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
-//         <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-//         <line x1="12" y1="22.08" x2="12" y2="12" />
-//       </svg>
-//     ),
-//     truck: (
-//       <svg
-//         width="24"
-//         height="24"
-//         viewBox="0 0 24 24"
-//         fill="none"
-//         stroke="currentColor"
-//         strokeWidth="1.5"
-//         strokeLinecap="round"
-//       >
-//         <rect x="1" y="3" width="15" height="13" />
-//         <path d="M16 8h4l3 3v5h-7V8z" />
-//         <circle cx="5.5" cy="18.5" r="1.5" />
-//         <circle cx="18.5" cy="18.5" r="1.5" />
-//       </svg>
-//     ),
-//   };
-//   return icons[name] ?? icons["package"];
-// }
+import SectionHeader from "@/components/ui/SectionHeader";
+import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
+import data from "@/data/siteData.json";
 
 const { ourSolutions } = data.pages.home;
 
@@ -89,18 +51,6 @@ export default function OurSolutions() {
 
                   {/* Card body */}
                   <div className="flex flex-col flex-1 p-6 gap-4">
-                    {/* Gold icon */}
-                    {/* <div
-                      className="
-                      w-10 h-10 rounded-lg
-                      flex items-center justify-center
-                      text-gold
-                      bg-gold-bg
-                    "
-                    >
-                      <SolutionIcon name={item.icon} />
-                    </div> */}
-
                     {/* Title */}
                     <h3
                       className="

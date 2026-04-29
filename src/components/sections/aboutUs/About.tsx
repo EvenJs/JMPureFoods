@@ -1,4 +1,4 @@
-import AnimatedSection from "../../ui/AnimatedSection";
+import AnimatedSection from "@/components/ui/AnimatedSection";
 
 interface SectionData {
   number: string;

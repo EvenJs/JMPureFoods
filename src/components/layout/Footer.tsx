@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import data from "../../data/siteData.json";
+import data from "@/data/siteData.json";
 
 // Type guard — checks if a link is internal (has path) or external (has href)
 type InternalLink = { label: string; path: string };

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import WhyCard from "../ui/WhyCard";
-import data from "../../data/siteData.json";
+import WhyCard from "../../ui/WhyCard";
+import data from "../../../data/siteData.json";
 
 const { whyPartner } = data.pages.home;
 

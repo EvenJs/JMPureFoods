@@ -26,17 +26,7 @@ export default function OurSolutions() {
 
             return (
               <StaggerItem key={item.title}>
-                <div
-                  className="
-                  flex 
-                  border border-gray-100
-                  rounded-2xl
-                  shadow-sm hover:shadow-md
-                  transition-shadow duration-300
-                  overflow-hidden
-                  h-full
-                "
-                >
+                <div className="flex border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden h-full flex-col md:flex-row">
                   {/* Card image */}
                   <div className="relative h-52 bg-off-white overflow-hidden">
                     <img
@@ -69,21 +59,10 @@ export default function OurSolutions() {
                     {/* Learn More link */}
                     <Link
                       to={item.cta.path}
-                      className="
-                        inline-flex items-center gap-1
-                        text-sm font-semibold text-brand
-                        hover:text-brand-mid
-                        transition-colors duration-200
-                        group
-                      "
+                      className="inline-flex items-center gap-1 text-sm font-semibold text-brand hover:text-brand-mid transition-colors duration-200 group"
                     >
                       {item.cta.label}
-                      <span
-                        className="
-                        transition-transform duration-200
-                        group-hover:translate-x-1
-                      "
-                      >
+                      <span className="transition-transform duration-200 group-hover:translate-x-1">
                         →
                       </span>
                     </Link>

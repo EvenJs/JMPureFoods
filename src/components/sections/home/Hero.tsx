@@ -15,10 +15,7 @@ export default function Hero() {
       />
 
       {/* Overlay — lighter on right so image shows through, stronger on left for text */}
-      <div
-        className="absolute 
-      "
-      />
+      <div className="absolute" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">

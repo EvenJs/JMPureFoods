@@ -176,14 +176,7 @@ export default function WhatWeDo() {
               <div className="relative cursor-pointer h-full" onClick={next}>
                 <SideSlide slide={slides[nextIdx]} />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div
-                    className="
-                    w-9 h-9 rounded-full
-                    bg-white/80 border border-gray-200
-                    flex items-center justify-center
-                    text-text-muted shadow-sm
-                  "
-                  >
+                  <div className="w-9 h-9 rounded-full bg-white/80 border border-gray-200 flex items-center justify-center text-text-muted shadow-sm">
                     <svg
                       width="14"
                       height="14"
@@ -206,7 +199,6 @@ export default function WhatWeDo() {
                 <motion.div
                   key={active}
                   custom={direction}
-                  // variants={variants}
                   initial={{ x: 300, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: -300, opacity: 0 }}
@@ -221,12 +213,7 @@ export default function WhatWeDo() {
                 <button
                   onClick={prev}
                   aria-label="Previous"
-                  className="
-                    w-9 h-9 rounded-full border border-gray-200
-                    flex items-center justify-center text-text-muted
-                    hover:bg-brand hover:text-white hover:border-brand
-                    transition-colors duration-200
-                  "
+                  className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-text-muted hover:bg-brand hover:text-white hover:border-brand transition-colors duration-200"
                 >
                   <svg
                     width="14"
@@ -243,12 +230,7 @@ export default function WhatWeDo() {
                 <button
                   onClick={next}
                   aria-label="Next"
-                  className="
-                    w-9 h-9 rounded-full border border-gray-200
-                    flex items-center justify-center text-text-muted
-                    hover:bg-brand hover:text-white hover:border-brand
-                    transition-colors duration-200
-                  "
+                  className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-text-muted hover:bg-brand hover:text-white hover:border-brand transition-colors duration-200"
                 >
                   <svg
                     width="14"

@@ -59,10 +59,7 @@ export default function PackagingFormats() {
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {packagingFormats.items.map((item) => (
             <StaggerItem key={item.title}>
-              <div
-                className="bg-white rounded-2xl overflow-hidden border border-gray-100
-                shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
-              >
+              <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col">
                 {/* Image */}
                 <div className="h-56 bg-off-white overflow-hidden">
                   {item.image ? (
@@ -88,10 +85,7 @@ export default function PackagingFormats() {
                       className="w-10 h-10 rounded-full border border-brand/30
                       flex items-center justify-center text-brand bg-green-300/20"
                     >
-                      <div
-                        className="w-10 h-10 rounded-full border border-brand/30
-  flex items-center justify-center text-brand"
-                      >
+                      <div className="w-10 h-10 rounded-full border border-brand/30 flex items-center justify-center text-brand">
                         {formatIcons[item.title] ??
                           formatIcons["Glass Bottles"]}
                       </div>
@@ -109,8 +103,7 @@ export default function PackagingFormats() {
                     {item.sizes.map((size) => (
                       <span
                         key={size}
-                        className="text-xs px-3 py-1 rounded-full
-                          border border-gray-200 text-text-muted bg-off-white"
+                        className="text-xs px-3 py-1 rounded-full border border-gray-200 text-text-muted bg-off-white"
                       >
                         {size}
                       </span>

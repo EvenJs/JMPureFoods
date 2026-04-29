@@ -6,7 +6,7 @@ const { privateLabel } = data.pages.services;
 export default function PrivateLabel() {
   return (
     <section className="bg-white py-20 px-6">
-      <div className="max-w-7xl mx-auto bg-green-50 rounded-2xl">
+      <div className="max-w-7xl mx-auto ">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           {/* Image */}
           <AnimatedSection className="w-full md:w-1/2" delay={0}>
@@ -42,10 +42,7 @@ export default function PrivateLabel() {
             <ul className="flex flex-col gap-3">
               {privateLabel.features.map((feature) => (
                 <li key={feature} className="flex items-center gap-3">
-                  <div
-                    className="w-5 h-5 rounded-full bg-brand/10 flex items-center
-                    justify-center shrink-0"
-                  >
+                  <div className="w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center shrink-0">
                     <svg
                       width="10"
                       height="10"

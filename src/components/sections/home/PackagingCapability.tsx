@@ -19,14 +19,10 @@ function PackagingCard({ item }: { item: PackagingItem }) {
           <img
             src={item.image}
             alt={item.label}
-            className="max-h-full max-w-full object-contain
-              transition-transform duration-300 group-hover:scale-105"
+            className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
-          <div
-            className="w-24 h-32 bg-gray-100 rounded-lg flex items-center
-            justify-center opacity-40"
-          >
+          <div className="w-24 h-32 bg-gray-100 rounded-lg flex items-center justify-center opacity-40">
             <svg
               width="28"
               height="28"

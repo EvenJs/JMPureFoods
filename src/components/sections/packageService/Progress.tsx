@@ -38,24 +38,12 @@ export default function OurProcess() {
               {/* Step */}
               <div className="flex flex-col items-center text-center w-44">
                 {/* Icon circle — bigger */}
-                <div
-                  className="
-          w-20 h-20 rounded-full
-          border-2 border-brand
-          flex items-center justify-center
-          text-brand mb-6
-        "
-                >
+                <div className="w-20 h-20 rounded-full border-2 border-brand flex items-center justify-center text-brand mb-6">
                   {React.cloneElement(stepIcons[index], { size: 30 })}
                 </div>
 
                 {/* Number badge — green circle */}
-                <div
-                  className="
-          w-7 h-7 rounded-full bg-brand
-          flex items-center justify-center mb-3
-        "
-                >
+                <div className="w-7 h-7 rounded-full bg-brand flex items-center justify-center mb-3">
                   <span className="text-white text-xs font-semibold">
                     {step.number}
                   </span>
@@ -88,14 +76,7 @@ export default function OurProcess() {
             <div key={step.number} className="flex gap-4">
               {/* Left: icon + connector line */}
               <div className="flex flex-col items-center">
-                <div
-                  className="
-                  w-12 h-12 rounded-full
-                  border border-brand
-                  flex items-center justify-center
-                  text-brand shrink-0
-                "
-                >
+                <div className="w-12 h-12 rounded-full border border-brand flex items-center justify-center text-brand shrink-0">
                   {stepIcons[index]}
                 </div>
                 {index < processData.steps.length - 1 && (
@@ -105,7 +86,11 @@ export default function OurProcess() {
 
               {/* Right: content */}
               <div className="pb-8 pt-1 flex flex-col gap-1">
-                <span className="text-xs text-text-muted">{step.number}</span>
+                <div className="w-7 h-7 rounded-full bg-brand flex items-center justify-center mb-3">
+                  <span className="text-white text-xs font-semibold">
+                    {step.number}
+                  </span>
+                </div>
                 <h3 className="text-sm font-bold text-text-dark">
                   {step.title}
                 </h3>

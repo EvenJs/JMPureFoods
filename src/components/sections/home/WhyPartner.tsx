@@ -38,13 +38,7 @@ export default function WhyPartner() {
             <button
               onClick={prev}
               aria-label="Previous"
-              className="
-                shrink-0 z-10 w-10 h-10 rounded-full
-                bg-white border border-gray-200 shadow-sm
-                flex items-center justify-center
-                hover:bg-brand hover:text-white hover:border-brand
-                transition-colors duration-200 text-text-muted
-              "
+              className="shrink-0 z-10 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:bg-brand hover:text-white hover:border-brand transition-colors duration-200 text-text-muted"
             >
               <svg
                 width="16"
@@ -81,13 +75,7 @@ export default function WhyPartner() {
             <button
               onClick={next}
               aria-label="Next"
-              className="
-                shrink-0 z-10 w-10 h-10 rounded-full
-                bg-white border border-gray-200 shadow-sm
-                flex items-center justify-center
-                hover:bg-brand hover:text-white hover:border-brand
-                transition-colors duration-200 text-text-muted
-              "
+              className="shrink-0 z-10 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:bg-brand hover:text-white hover:border-brand transition-colors duration-200 text-text-muted"
             >
               <svg
                 width="16"

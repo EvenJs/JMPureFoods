@@ -48,7 +48,7 @@
         "heading": "Your Trusted Toll Packing Partner",
         "subheading": "Premium liquid packing solutions with quality, safety and integrity.",
         "cta": { "label": "Our Services", "path": "/services" },
-        "image": "/assets/images/hero-bg.png"
+        "image": "/assets/images/home/hero-bg.png"
       },
 
       "ourSolutions": {
@@ -60,14 +60,14 @@
             "title": "CONTRACT PACKAGING",
             "description": "End-to-end toll packing solutions for edible oils. From filling to finished product — we bring your brand to life.",
             "cta": { "label": "Learn More", "path": "/services" },
-            "image": "/assets/images/solution1.png"
+            "image": "/assets/images/home/solution1.png"
           },
           {
             "icon": "truck",
             "title": "FOOD SERVICE",
             "description": "Reliable bulk edible oil supply solutions for restaurants, catering, and food service businesses.",
             "cta": { "label": "Learn More", "path": "/food-service" },
-            "image": "/assets/images/solution2.png"
+            "image": "/assets/images/home/solution2.png"
           }
         ]
       },
@@ -79,17 +79,17 @@
           {
             "label": "Retail Bottles",
             "size": "250ml – 5L",
-            "image": "/assets/images/package1.png"
+            "image": "/assets/images/home/package1.png"
           },
           {
             "label": "Commercial Packs",
             "size": "10L – 20L",
-            "image": "/assets/images/package2.png"
+            "image": "/assets/images/home/package2.png"
           },
           {
             "label": "Drums",
             "size": "200L",
-            "image": "/assets/images/package3.png"
+            "image": "/assets/images/home/package3.png"
           }
         ]
       },
@@ -101,7 +101,7 @@
         "items": [
           {
             "number": "01",
-            "image": "/assets/images/reason-1.png",
+            "image": "/assets/images/home/reason-1.png",
             "title": "Premium Quality",
             "paragraphs": [
               "Quality is at the heart of everything we do.",
@@ -111,7 +111,7 @@
           },
           {
             "number": "02",
-            "image": "/assets/images/reason-2.png",
+            "image": "/assets/images/home/reason-2.png",
             "title": "Flexible Solutions",
             "paragraphs": [
               "We understand that every client has different requirements.",
@@ -121,7 +121,7 @@
           },
           {
             "number": "03",
-            "image": "/assets/images/reason-3.png",
+            "image": "/assets/images/home/reason-3.png",
             "title": "Cost Effectiveness",
             "paragraphs": [
               "Our efficient operational model helps deliver cost-effective packaging and supply solutions without compromising quality.",
@@ -130,7 +130,7 @@
           },
           {
             "number": "04",
-            "image": "/assets/images/reason-4.png",
+            "image": "/assets/images/home/hero-bg.png",
             "title": "Food Safety",
             "paragraphs": [
               "Food safety is at the core of everything we do.",
@@ -140,7 +140,7 @@
           },
           {
             "number": "05",
-            "image": "/assets/images/reason-5.png",
+            "image": "/assets/images/home/reason-5.png",
             "title": "Strong Partnerships",
             "paragraphs": [
               "We believe in building long-term relationships based on trust, transparency, and mutual growth.",
@@ -169,13 +169,13 @@
         "heading": "About Us",
         "tagline": "Clean. Consistent. Trusted.",
         "subheading": "Food solutions built on quality, delivered with care.",
-        "image": "/assets/images/about-hero.png"
+        "image": "/assets/images/about/about-hero.png"
       },
       "sections": [
         {
           "number": "01",
           "heading": "Who We Are",
-          "image": "/assets/images/about-1.png",
+          "image": "/assets/images/about/about-1.png",
           "imagePosition": "left",
           "paragraphs": [
             "JM PUREFOODS is an Australia-based food solutions provider specializing in clean, high-quality edible oils and natural products for the local market.",
@@ -185,7 +185,7 @@
         {
           "number": "02",
           "heading": "What We Do",
-          "image": "/assets/images/about-2.png",
+          "image": "/assets/images/about/about-2.png",
           "imagePosition": "right",
           "paragraphs": [
             "We provide end-to-end supply solutions across multiple formats, from bulk supply to industrial and retail packaging, as well as OEM and private label production",
@@ -195,7 +195,7 @@
         {
           "number": "03",
           "heading": "Our Philosophy",
-          "image": "/assets/images/about-3.png",
+          "image": "/assets/images/about/about-3.png",
           "imagePosition": "left",
           "paragraphs": [
             "We believe food supply should be both refined and reliable.",

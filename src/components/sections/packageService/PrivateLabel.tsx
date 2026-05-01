@@ -15,7 +15,7 @@ export default function PrivateLabel() {
                 <img
                   src={privateLabel.image}
                   alt={privateLabel.heading}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               ) : (
                 <div className="w-full h-full bg-off-white flex items-center justify-center">

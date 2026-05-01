@@ -1,4 +1,3 @@
-import CTABanner from "@/components/sections/packageService/CTABanner";
 import PackagingFormats from "@/components/sections/packageService/PackagingFormats";
 import PrivateLabel from "@/components/sections/packageService/PrivateLabel";
 import Process from "@/components/sections/packageService/Progress";
@@ -13,7 +12,6 @@ export default function PackageServices() {
       <PackagingFormats />
       <PrivateLabel />
       <Process />
-      <CTABanner />
     </>
   );
 }

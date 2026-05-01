@@ -369,43 +369,90 @@
         "canonical": "https://jmpurefoods.com.au/food-service"
       },
       "hero": {
-        "heading": "Reliable Bulk Edible Oil Supply",
+        "heading": "Food Service Solutions",
         "subheading": "Consistent supply, cost efficiency, and reliable logistics for food service operations.",
-        "image": "/assets/images/food-service-hero.jpg"
+        "cta": { "label": "Get a Quote", "path": "/contact" },
+        "image": "/assets/images/foodService/bg-hero.png"
       },
-      "intro": "We supply edible oil solutions in bulk formats for food service industries including restaurants, catering businesses, and commercial kitchens.",
-      "targetCustomers": [
-        "Restaurants",
-        "Catering businesses",
-        "Commercial kitchens"
-      ],
-      "capabilities": [
-        { "icon": "droplet", "label": "Bulk edible oil supply" },
-        {
-          "icon": "package",
-          "label": "Large format packaging (drums / containers / IBC)"
-        },
-        { "icon": "refresh", "label": "Consistent commercial supply" },
-        { "icon": "sliders", "label": "Custom order volumes" },
-        { "icon": "handshake", "label": "Long-term supply partnerships" }
-      ],
-      "packagingFormats": [
-        {
-          "size": "10L",
-          "type": "Container",
-          "image": "/assets/images/packaging/10l.png"
-        },
-        {
-          "size": "20L",
-          "type": "Container",
-          "image": "/assets/images/packaging/20l.png"
-        },
-        {
-          "size": "Bulk",
-          "type": "Bag-in-box",
-          "image": "/assets/images/packaging/bib.png"
-        }
-      ]
+      "whatWeDo": {
+        "label": "WHAT WE DO",
+        "heading": "Food Service Solutions",
+        "description": "Consistent, cost-effective solutions for food service supply.",
+        "cta": { "label": "Get in touch", "path": "/contact" },
+        "slides": [
+          {
+            "image": "/assets/images/foodService/slide-1.png",
+            "title": "Cooking Oil",
+            "description": "Ideal for frying, sautéing, and general kitchen use."
+          },
+          {
+            "image": "/assets/images/foodService/slide-2.png",
+            "title": "Blending Oil",
+            "description": "Balanced performance for multiple applications."
+          },
+          {
+            "image": "/assets/images/foodService/slide-3.png",
+            "title": "Bulk Supply",
+            "description": "Cost-effective large volumes solutions for central kitchens."
+          },
+          {
+            "image": "/assets/images/foodService/slide-4.png",
+            "title": "OEM/Private Label",
+            "description": "Custom branding solutions for your business."
+          }
+        ]
+      },
+      "FoodServiceFormats": {
+        "label": "FOOD SERVICE FORMATS",
+        "heading": "Supported by Flexible Supply Formats",
+        "subtitle": "From bulk supply to dispending systems, we provide formats designed for efficiency, consistency, and operational scale.",
+        "items": [
+          {
+            "image": "/assets/images/foodService/format-1.png",
+            "title": "20L",
+            "description": "Durable and easy to handle, ideal for busy kitchens."
+          },
+          {
+            "image": "/assets/images/foodService/format-2.png",
+            "title": "Bag in Box",
+            "description": "Space-saving and convenient, easy to recycle."
+          },
+          {
+            "image": "/assets/images/foodService/format-3.png",
+            "title": "Bulk Oil in IBC",
+            "description": "High volume, cost-effective solution for large operations."
+          }
+        ]
+      },
+      "applicationScenarios": {
+        "heading": "Application Scenarios",
+        "items": [
+          {
+            "icon": "restaurant",
+            "title": "Restaurant",
+            "description": "Consistent taste for everyday service",
+            "image": "/assets/images/foodService/scenario-1.png"
+          },
+          {
+            "icon": "catering",
+            "title": "Catering",
+            "description": "Reliable performance at scale",
+            "image": "/assets/images/foodService/scenario-2.png"
+          },
+          {
+            "icon": "hotel",
+            "title": "Hotel",
+            "description": "Quality you can rely on",
+            "image": "/assets/images/foodService/scenario-3.png"
+          },
+          {
+            "icon": "kitchen",
+            "title": "Cloud Kitchen",
+            "description": "Efficient solutions for modern kitchens",
+            "image": "/assets/images/foodService/scenario-4.png"
+          }
+        ]
+      }
     },
 
     "contact": {

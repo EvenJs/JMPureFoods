@@ -78,7 +78,7 @@ export default function ApplicationScenarios() {
                 <div
                   className="
                   absolute inset-0
-                  bg-gradient-to-t from-black/70 via-black/30 to-black/20
+                  bg-linear-to-t from-black/70 via-black/30 to-black/20
                   group-hover:from-black/60 group-hover:via-black/20 group-hover:to-black/10
                   transition-all duration-300
                 "

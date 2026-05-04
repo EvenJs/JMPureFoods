@@ -8,12 +8,14 @@ import About from "./pages/About";
 import PackageService from "./pages/PackageServices";
 import FoodService from "./pages/FoodService";
 import ContactUs from "./pages/ContactUs";
+import ScrollToTop from "./components/layout/ ScrollToTop";
 
 export default function App() {
   const location = useLocation();
 
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <main>
         <AnimatePresence mode="wait">

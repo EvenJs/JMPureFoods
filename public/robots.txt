@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jmpurefoods.com.au/sitemap.xml

@@ -5,6 +5,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 
 import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
 import data from "@/data/siteData.json";
+import { Helmet } from "react-helmet-async";
 import { MdPhone } from "react-icons/md";
 
 export default function ContactUs() {
@@ -12,6 +13,21 @@ export default function ContactUs() {
   const { company } = data;
   return (
     <>
+      <Helmet>
+        <title>Contact Us | JM Purefoods Pty Ltd</title>
+        <meta
+          name="description"
+          content="Get in touch with JM Purefoods Pty Ltd. Located in Pakenham VIC. ABN 91 690 274 901."
+        />
+        <meta property="og:title" content="Contact Us | JM Purefoods" />
+        <meta
+          property="og:description"
+          content="Send an enquiry to JM Purefoods Pty Ltd. We'll get back to you shortly."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jmpurefoods.com.au/contact" />
+        <link rel="canonical" href="https://jmpurefoods.com.au/contact" />
+      </Helmet>
       <ContactHero />
 
       {/* Contact detail cards */}
@@ -62,26 +78,6 @@ export default function ContactUs() {
                   <p className="text-sm text-text-muted leading-relaxed">
                     {company.description}
                   </p>
-                </div>
-
-                {/* Legal info */}
-                <div
-                  className="flex flex-col gap-2 p-5 bg-off-white rounded-xl
-                  border border-gray-100"
-                >
-                  <div className="flex justify-between text-sm">
-                    <span className="text-text-muted">ABN</span>
-                    <span className="font-medium text-text-dark">
-                      {company.abn}
-                    </span>
-                  </div>
-                  <div className="h-px bg-gray-200" />
-                  <div className="flex justify-between text-sm">
-                    <span className="text-text-muted">ACN</span>
-                    <span className="font-medium text-text-dark">
-                      {company.acn}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Map placeholder */}

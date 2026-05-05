@@ -1,30 +1,43 @@
+import { motion } from "framer-motion";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
 import data from "@/data/siteData.json";
 
-const { FoodServiceFormats } = data.pages.foodService;
+const { foodServiceFormats } = data.pages.foodService;
 
 export default function FoodServiceFormat() {
   return (
     <section className="bg-off-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
+        {/* Header */}
         <AnimatedSection className="text-center mb-14">
-          <p className="text-xl font-extrabold uppercase tracking-widest text-brand mb-3">
-            {FoodServiceFormats.label}
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand mb-3">
+            {foodServiceFormats.label}
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-text-dark mb-4">
-            {FoodServiceFormats.heading}
+          <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-4">
+            {foodServiceFormats.heading}
           </h2>
           <div className="w-8 h-0.5 bg-gold rounded-full mx-auto mb-4" />
           <p className="text-text-muted text-sm md:text-base leading-relaxed max-w-xl mx-auto">
-            {FoodServiceFormats.subtitle}
+            {foodServiceFormats.subtitle}
           </p>
         </AnimatedSection>
 
+        {/* Cards */}
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {FoodServiceFormats.items.map((item) => (
+          {foodServiceFormats.items.map((item) => (
             <StaggerItem key={item.title}>
-              <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col">
+              <motion.div
+                whileHover={{ y: -4 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="
+                  bg-white rounded-2xl overflow-hidden
+                  border border-gray-100
+                  shadow-sm hover:shadow-md
+                  transition-shadow duration-300
+                  flex flex-col h-full
+                "
+              >
                 {/* Image */}
                 <div className="h-56 bg-off-white overflow-hidden">
                   {item.image ? (
@@ -43,18 +56,15 @@ export default function FoodServiceFormat() {
                 </div>
 
                 {/* Body */}
-                <div className="p-6 flex flex-col gap-3">
-                  {/* Icon + title */}
-                  <div className="flex flex-col items-center text-center gap-2">
-                    <h3 className="text-base font-bold text-brand">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs text-text-muted">
-                      {item.description}
-                    </p>
-                  </div>
+                <div className="p-6 flex flex-col items-center text-center gap-2 flex-1">
+                  <h3 className="text-base font-bold text-text-dark">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-text-muted leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
-              </div>
+              </motion.div>
             </StaggerItem>
           ))}
         </StaggerContainer>

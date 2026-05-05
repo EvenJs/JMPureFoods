@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import SectionHeader from "@/components/ui/SectionHeader";
 import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
 import data from "@/data/siteData.json";
@@ -12,17 +13,25 @@ interface PackagingItem {
 
 function PackagingCard({ item }: { item: PackagingItem }) {
   return (
-    <div className="flex flex-col items-center text-center gap-3 group">
-      {/* Image — no box, just the image */}
+    <motion.div
+      whileHover={{ y: -4 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      className="flex flex-col items-center text-center gap-3 group cursor-default"
+    >
+      {/* Image */}
       <div className="w-full h-40 flex items-end justify-center pb-2">
         {item.image ? (
           <img
             src={item.image}
             alt={item.label}
-            className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+            className="max-h-full max-w-full object-contain
+              transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
-          <div className="w-24 h-32 bg-gray-100 rounded-lg flex items-center justify-center opacity-40">
+          <div
+            className="w-24 h-32 bg-gray-100 rounded-lg flex items-center
+            justify-center opacity-40"
+          >
             <svg
               width="28"
               height="28"
@@ -48,7 +57,7 @@ function PackagingCard({ item }: { item: PackagingItem }) {
           <span className="text-xs text-text-muted">{item.size}</span>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -64,6 +73,7 @@ function getGridClass(count: number) {
 
 export default function PackagingCapability() {
   const items = packagingCapability.items;
+
   return (
     <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
@@ -75,15 +85,20 @@ export default function PackagingCapability() {
           />
         </div>
 
-        {/* Desktop — items separated by vertical dividers */}
+        {/* Desktop — vertical dividers between items */}
         <StaggerContainer
-          className={`
-          hidden md:grid ${getGridClass(items.length)}
-          divide-x divide-gray-200
-        `}
+          className={`hidden md:grid ${getGridClass(items.length)}`}
         >
-          {items.map((item) => (
-            <StaggerItem key={item.label} className="px-6 first:pl-0 last:pr-0">
+          {items.map((item, index) => (
+            <StaggerItem
+              key={item.label}
+              className={`
+                px-6
+                ${index === 0 ? "pl-0" : ""}
+                ${index === items.length - 1 ? "pr-0" : ""}
+                ${index > 0 ? "border-l border-gray-200" : ""}
+              `}
+            >
               <PackagingCard item={item} />
             </StaggerItem>
           ))}

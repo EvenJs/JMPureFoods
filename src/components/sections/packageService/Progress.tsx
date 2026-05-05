@@ -1,13 +1,15 @@
+import React from "react";
 import { GrChat } from "react-icons/gr";
-import { LuClipboardCheck } from "react-icons/lu";
-import { LuFileCheck } from "react-icons/lu";
-import { LuFactory } from "react-icons/lu";
-import { LuTruck } from "react-icons/lu";
+import {
+  LuClipboardCheck,
+  LuFileCheck,
+  LuFactory,
+  LuTruck,
+} from "react-icons/lu";
+import { RiArrowRightLongFill } from "react-icons/ri";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
 import data from "@/data/siteData.json";
-import React from "react";
-import { RiArrowRightLongFill } from "react-icons/ri";
 
 const { process: processData } = data.pages.services;
 
@@ -37,12 +39,19 @@ export default function OurProcess() {
             <StaggerItem key={step.number} className="flex items-start">
               {/* Step */}
               <div className="flex flex-col items-center text-center w-44">
-                {/* Icon circle — bigger */}
-                <div className="w-20 h-20 rounded-full border-2 border-brand flex items-center justify-center text-brand mb-6">
+                {/* Icon circle */}
+                <div
+                  className="
+                  w-20 h-20 rounded-full
+                  border-2 border-brand
+                  flex items-center justify-center
+                  text-brand mb-6
+                "
+                >
                   {React.cloneElement(stepIcons[index], { size: 30 })}
                 </div>
 
-                {/* Number badge — green circle */}
+                {/* Number badge */}
                 <div className="w-7 h-7 rounded-full bg-brand flex items-center justify-center mb-3">
                   <span className="text-white text-xs font-semibold">
                     {step.number}
@@ -60,10 +69,10 @@ export default function OurProcess() {
                 </p>
               </div>
 
-              {/* Arrow */}
+              {/* Arrow — use hex colour directly */}
               {index < processData.steps.length - 1 && (
-                <div className="text-gray-300 mt-8 mx-2 shrink-0">
-                  <RiArrowRightLongFill size={40} color="green" />
+                <div className="mt-8 mx-2 shrink-0">
+                  <RiArrowRightLongFill size={40} color="#2a5c3f" />
                 </div>
               )}
             </StaggerItem>
@@ -71,12 +80,19 @@ export default function OurProcess() {
         </StaggerContainer>
 
         {/* Mobile — vertical steps */}
-        <div className="md:hidden flex flex-col gap-0">
+        <div className="md:hidden flex flex-col">
           {processData.steps.map((step, index) => (
             <div key={step.number} className="flex gap-4">
               {/* Left: icon + connector line */}
               <div className="flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full border border-brand flex items-center justify-center text-brand shrink-0">
+                <div
+                  className="
+                  w-12 h-12 rounded-full
+                  border border-brand
+                  flex items-center justify-center
+                  text-brand shrink-0
+                "
+                >
                   {stepIcons[index]}
                 </div>
                 {index < processData.steps.length - 1 && (
@@ -86,7 +102,7 @@ export default function OurProcess() {
 
               {/* Right: content */}
               <div className="pb-8 pt-1 flex flex-col gap-1">
-                <div className="w-7 h-7 rounded-full bg-brand flex items-center justify-center mb-3">
+                <div className="w-7 h-7 rounded-full bg-brand flex items-center justify-center mb-2">
                   <span className="text-white text-xs font-semibold">
                     {step.number}
                   </span>

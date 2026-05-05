@@ -402,7 +402,7 @@
           }
         ]
       },
-      "FoodServiceFormats": {
+      "foodServiceFormats": {
         "label": "FOOD SERVICE FORMATS",
         "heading": "Supported by Flexible Supply Formats",
         "subtitle": "From bulk supply to dispending systems, we provide formats designed for efficiency, consistency, and operational scale.",

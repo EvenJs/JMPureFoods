@@ -36,13 +36,16 @@ export default function Footer() {
                 </span>
               </div>
             </div>
-            <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
+            {/* <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
               {footer.tagline}
-            </p>
+            </p> */}
             <div className="text-white/40 text-xs leading-relaxed space-y-1">
               <p>ABN: {company.abn}</p>
-              <p>ACN: {company.acn}</p>
-              <p>{company.address}</p>
+              {/* <p>ACN: {company.acn}</p> */}
+              <p>Melbourne, Australia</p>
+            </div>
+            <div className="text-white/40 text-xs leading-relaxed space-y-1 flex gap-2">
+              <p>{company.email}</p> | <p>{company.phone}</p>
             </div>
           </div>
 
@@ -89,8 +92,8 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="px-6 py-4" style={{ backgroundColor: "#112a1a" }}>
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-white/30 text-xs">{footer.legal}</p>
-          <p className="text-white/30 text-xs">{footer.location}</p>
+          <p className="text-white/60 text-xs">{footer.legal}</p>
+          <p className="text-white/60 text-xs">{footer.location}</p>
         </div>
       </div>
     </footer>

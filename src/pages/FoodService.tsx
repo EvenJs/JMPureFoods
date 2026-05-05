@@ -1,8 +1,8 @@
+import { Helmet } from "react-helmet-async";
 import ApplicationScenarios from "@/components/sections/foodService/ApplicationScenarios";
 import FoodServiceFormat from "@/components/sections/foodService/FoodServiceFormat";
 import FoodServiceHero from "@/components/sections/foodService/FoodServiceHero";
 import WhatWeDo from "@/components/sections/foodService/WhatWeDo";
-import { Helmet } from "react-helmet-async";
 
 export default function FoodService() {
   return (

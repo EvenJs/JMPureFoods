@@ -1,10 +1,10 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import PageWrapper from "./components/ui/PageWrapper";
-import ScrollToTop from "./components/layout/ ScrollToTop";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import PageWrapper from "@/components/ui/PageWrapper";
+import ScrollToTop from "@/components/layout/ ScrollToTop";
 
 const Home = lazy(() => import("@/pages/Home"));
 const About = lazy(() => import("@/pages/About"));

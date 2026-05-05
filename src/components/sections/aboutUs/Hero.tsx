@@ -28,7 +28,7 @@ export default function AboutHero() {
           <p className="text-brand font-semibold text-base mb-2">
             {hero.tagline}
           </p>
-          <p className="text-brand/70 text-sm leading-relaxed">
+          <p className="text-text-muted text-sm leading-relaxed">
             {hero.subheading}
           </p>
         </motion.div>

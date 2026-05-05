@@ -14,24 +14,14 @@ export default function Hero() {
         style={{ backgroundImage: `url(${data.pages.home.hero.image})` }}
       />
 
-      {/* Overlay — lighter on right so image shows through, stronger on left for text */}
-      <div className="absolute" />
-
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
-        <div
-          className="
-          w-full
-          md:w-[50%]
-          lg:w-[45%]
-          xl:w-[40%]
-        "
-        >
+        <div className="w-full md:w-[50%] lg:w-[45%] xl:w-[40%]">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0 }}
-            className="text-4xl md:text-4xl lg:text-5xl font-bold text-text-dark leading-tight mb-4"
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="text-4xl lg:text-5xl font-bold text-brand leading-tight mb-4"
           >
             {hero.heading}
           </motion.h1>

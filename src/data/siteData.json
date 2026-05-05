@@ -8,7 +8,7 @@
     "address": "2 Exchange Dr, Pakenham VIC 3810",
     "phone": "+61 428 254 866",
     "email": "info@jmpurefoods.com.au",
-    "logo": "/assets/images/Logo1.webp",
+    "logo": "/assets/images/logo.webp",
     "tagline": "Your Trusted Toll Packing Partner",
     "description": "JM Purefoods Pty Ltd is an Australia-based food company focused on edible oil production, packaging, and supply chain solutions."
   },
@@ -77,18 +77,18 @@
         "subtitle": "From retail sizes to bulk supply — we deliver the right packaging solution for your market.",
         "items": [
           {
-            "label": "Retail Bottles",
+            "label": "Retail Packages",
             "size": "250ml – 5L",
             "image": "/assets/images/home/package1.webp"
           },
           {
-            "label": "Commercial Packs",
+            "label": "Industrial Packages",
             "size": "10L – 20L",
             "image": "/assets/images/home/package2.webp"
           },
           {
-            "label": "Drums",
-            "size": "200L",
+            "label": "IBC & Bulk Oil",
+            "size": "1000L",
             "image": "/assets/images/home/package3.webp"
           }
         ]
@@ -188,7 +188,7 @@
           "image": "/assets/images/about/about-2.webp",
           "imagePosition": "right",
           "paragraphs": [
-            "We provide end-to-end supply solutions across multiple formats, from bulk supply to industrial and retail packaging, as well as OEM and private label production",
+            "We provide end-to-end supply solutions across multiple formats, from bulk supply to industrial and retail packaging, as well as OEM and private label production.",
             "Built around customization, flexibility, and efficiency, our approach allows us to adapt quickly to different business models, volume requirements, and brand needs, ensuring each solution is precise, scalable, and market-ready."
           ]
         },
@@ -199,7 +199,7 @@
           "imagePosition": "left",
           "paragraphs": [
             "We believe food supply should be both refined and reliable.",
-            "Guided by clean sourcing principles and operational discipline, we focus on simplifying complexity, creating seamless pathways from production to shelf",
+            "Guided by clean sourcing principles and operational discipline, we focus on simplifying complexity, creating seamless pathways from production to shelf.",
             "At JM PUREFOODS, we are committed to delivering not just products, but a consistent, efficient, and trusted supply experience for our partners."
           ]
         }
@@ -348,7 +348,7 @@
           {
             "number": 5,
             "title": "Delivery",
-            "description": "On-time delivery worldwide"
+            "description": "On-time delivery"
           }
         ]
       }
@@ -403,7 +403,7 @@
         "items": [
           {
             "image": "/assets/images/foodService/format-1.webp",
-            "title": "20L",
+            "title": "20L Tin Drum",
             "description": "Durable and easy to handle, ideal for busy kitchens."
           },
           {
@@ -521,11 +521,10 @@
   },
 
   "footer": {
-    "tagline": "Premium liquid toll packing solutions with quality, safety and integrity.",
     "image": "/assets/images/footer-wave.webp",
     "columns": [
       {
-        "heading": "Pages",
+        "heading": "Quick Links",
         "links": [
           { "label": "Home", "path": "/" },
           { "label": "About Us", "path": "/about" },
@@ -543,23 +542,9 @@
           { "label": "Private Label", "path": "/services" },
           { "label": "Food Service Supply", "path": "/food-service" }
         ]
-      },
-      {
-        "heading": "Contact",
-        "links": [
-          { "label": "+61 428 254 866", "href": "tel:+61428254866" },
-          {
-            "label": "info@jmpurefoods.com.au",
-            "href": "mailto:info@jmpurefoods.com.au"
-          },
-          {
-            "label": "2 Exchange Dr, Pakenham VIC 3810",
-            "href": "https://maps.google.com/?q=2+Exchange+Dr+Pakenham+VIC+3810"
-          }
-        ]
       }
     ],
-    "legal": "© 2025 JM Purefoods Pty Ltd. All rights reserved.",
+    "legal": "© 2026 JM Purefoods Pty Ltd. All rights reserved.",
     "location": "Pakenham, VIC, Australia"
   }
 }

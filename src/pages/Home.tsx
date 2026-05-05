@@ -1,8 +1,8 @@
+import { Helmet } from "react-helmet-async";
 import Hero from "@/components/sections/home/Hero";
 import OurSolutions from "@/components/sections/home/OurSolutions";
 import PackagingCapability from "@/components/sections/home/PackagingCapability";
 import WhyPartner from "@/components/sections/home/WhyPartner";
-import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   return (

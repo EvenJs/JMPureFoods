@@ -35,38 +35,6 @@ const sizeStyles: Record<Size, string> = {
   lg: "text-sm px-8 py-4",
 };
 
-export default function Button({
-  variant = "gold",
-  size = "md",
-  onClick,
-  type = "button",
-  className = "",
-  children,
-  disabled = false,
-}: ButtonProps) {
-  return (
-    <motion.button
-      type={type}
-      onClick={onClick}
-      disabled={disabled}
-      whileHover={disabled ? {} : { scale: 1.03 }}
-      whileTap={disabled ? {} : { scale: 0.98 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className={`
-        inline-flex items-center justify-center
-        font-semibold uppercase tracking-widest
-        rounded transition-colors duration-200
-        disabled:opacity-50 disabled:cursor-not-allowed
-        ${variantStyles[variant]}
-        ${sizeStyles[size]}
-        ${className}
-      `}
-    >
-      {children}
-    </motion.button>
-  );
-}
-
 export function ButtonLink({
   to,
   external = false,

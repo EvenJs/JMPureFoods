@@ -1,6 +1,6 @@
+import type { JSX } from "react";
 import { motion } from "framer-motion";
 import { GiOilDrum } from "react-icons/gi";
-import type { JSX } from "react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
 import data from "@/data/siteData.json";

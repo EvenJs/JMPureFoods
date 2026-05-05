@@ -1,12 +1,11 @@
+import { Helmet } from "react-helmet-async";
+import { MdPhone } from "react-icons/md";
 import DetailCard from "@/components/sections/contactUs/ContactDetailCard";
 import ContactForm from "@/components/sections/contactUs/ContactForm";
 import ContactHero from "@/components/sections/contactUs/ContactHero";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-
 import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
 import data from "@/data/siteData.json";
-import { Helmet } from "react-helmet-async";
-import { MdPhone } from "react-icons/md";
 
 export default function ContactUs() {
   const { contact } = data.pages;

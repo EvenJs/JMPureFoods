@@ -1,10 +1,8 @@
-import { MdRestaurant } from "react-icons/md";
+import type { JSX } from "react";
+import { MdRestaurant, MdOutlineHotel, MdOutlineKitchen } from "react-icons/md";
 import { IoRestaurantOutline } from "react-icons/io5";
-import { MdOutlineHotel } from "react-icons/md";
-import { MdOutlineKitchen } from "react-icons/md";
 import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
 import data from "@/data/siteData.json";
-import type { JSX } from "react";
 
 const { applicationScenarios } = data.pages.foodService;
 
@@ -24,28 +22,7 @@ export default function ApplicationScenarios() {
           <h2 className="text-3xl font-bold text-text-dark">
             {applicationScenarios.heading}
           </h2>
-
-          {/* ——🌿—— */}
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-0.5 bg-gold rounded-full" />
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17 8C8 10 5.9 16.17 3.82 19.34a1 1 0 00.95 1.55c4-.68 8.58-2.78 11.18-8.89"
-                fill="#2a5c3f"
-                opacity="0.8"
-              />
-              <path
-                d="M22 2s-7 0-11 6c-2.15 3.58-2.77 7.5-3 9a15.06 15.06 0 006-3"
-                fill="#2a5c3f"
-              />
-            </svg>
-            <div className="w-8 h-0.5 bg-gold rounded-full" />
-          </div>
+          <div className="w-8 h-0.5 bg-gold rounded-full" />
         </div>
 
         {/* Cards grid */}

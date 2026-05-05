@@ -21,7 +21,7 @@ export default function ServicesHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0 }}
-            className="text-4xl md:text-6xl font-bold text-brand leading-tight mb-4"
+            className="text-4xl lg:text-5xl font-bold text-brand leading-tight mb-4"
           >
             {hero.heading}
           </motion.h1>
@@ -29,7 +29,7 @@ export default function ServicesHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="text-black text-2xl leading-relaxed mb-8"
+            className="text-text-muted text-base leading-relaxed mb-8"
           >
             {hero.subheading}
           </motion.p>

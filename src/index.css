@@ -12,3 +12,10 @@
   --color-text-dark: #1a2e1f;
   --color-text-muted: #5a7060;
 }
+@layer base {
+  :focus-visible {
+    outline: 2px solid #2a5c3f;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}

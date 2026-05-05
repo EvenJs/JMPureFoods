@@ -32,6 +32,8 @@ export default function WhyCard({
           <img
             src={item.image}
             alt={item.title}
+            width="600"
+            height="400"
             className="w-full h-full object-contain"
           />
         ) : (

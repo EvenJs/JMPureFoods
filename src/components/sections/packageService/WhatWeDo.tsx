@@ -34,6 +34,7 @@ function ActiveSlide({ slide }: { slide: Slide }) {
           <img
             src={slide.image}
             alt={slide.title}
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         ) : (
@@ -60,6 +61,7 @@ function SideSlide({ slide }: { slide: Slide }) {
           <img
             src={slide.image}
             alt={slide.title}
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         ) : (

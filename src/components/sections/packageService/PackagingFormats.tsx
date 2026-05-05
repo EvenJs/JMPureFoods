@@ -75,6 +75,7 @@ export default function ServicesPackagingFormats() {
                     <img
                       src={item.image}
                       alt={item.title}
+                      loading="lazy"
                       className="w-full h-full object-contain p-6"
                     />
                   ) : (

@@ -28,7 +28,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
             <div className="w-20 h-full items-center justify-center">
-              <img src={data.company.logo} alt="Logo" />
+              <img src={data.company.logo} alt="JM Purefoods logo" />
             </div>
             <div className="flex flex-col leading-none">
               <span className="text-brand font-bold text-sm tracking-wide">

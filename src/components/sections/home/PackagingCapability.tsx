@@ -24,6 +24,9 @@ function PackagingCard({ item }: { item: PackagingItem }) {
           <img
             src={item.image}
             alt={item.label}
+            width="600"
+            height="400"
+            loading="lazy"
             className="max-h-full max-w-full object-contain
               transition-transform duration-300 group-hover:scale-105"
           />

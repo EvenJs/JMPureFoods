@@ -44,6 +44,9 @@ export default function FoodServiceFormat() {
                     <img
                       src={item.image}
                       alt={item.title}
+                      width="400"
+                      height="300"
+                      loading="lazy"
                       className="w-full h-full object-contain p-6"
                     />
                   ) : (

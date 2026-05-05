@@ -64,6 +64,9 @@ export default function ApplicationScenarios() {
                   <img
                     src={item.image}
                     alt={item.title}
+                    width="400"
+                    height="300"
+                    loading="lazy"
                     className="
                       absolute inset-0 w-full h-full object-cover
                       transition-transform duration-500

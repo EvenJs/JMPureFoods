@@ -15,6 +15,7 @@ export default function PrivateLabel() {
                 <img
                   src={privateLabel.image}
                   alt={privateLabel.heading}
+                  loading="lazy"
                   className="w-full h-full object-contain"
                 />
               ) : (

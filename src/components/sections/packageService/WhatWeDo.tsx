@@ -29,7 +29,7 @@ const variants = {
 function ActiveSlide({ slide }: { slide: Slide }) {
   return (
     <div className="rounded-xl overflow-hidden border border-gray-200 shadow-md bg-white h-full flex flex-col">
-      <div className="h-64 overflow-hidden shrink-0">
+      <div className="h-56 overflow-hidden shrink-0">
         {slide.image ? (
           <img
             src={slide.image}
@@ -44,8 +44,8 @@ function ActiveSlide({ slide }: { slide: Slide }) {
         )}
       </div>
       <div className="p-4 flex flex-col gap-1 flex-1">
-        <h3 className="text-sm font-semibold text-text-dark">{slide.title}</h3>
-        <p className="text-xs text-text-muted leading-relaxed">
+        <h3 className="text-md font-semibold text-text-dark">{slide.title}</h3>
+        <p className="text-sm text-text-muted leading-relaxed">
           {slide.description}
         </p>
       </div>
@@ -56,7 +56,7 @@ function ActiveSlide({ slide }: { slide: Slide }) {
 function SideSlide({ slide }: { slide: Slide }) {
   return (
     <div className="rounded-xl overflow-hidden border border-gray-100 shadow-sm bg-white h-full flex flex-col">
-      <div className="h-64 overflow-hidden shrink-0">
+      <div className="h-56 overflow-hidden shrink-0">
         {slide.image ? (
           <img
             src={slide.image}

@@ -252,32 +252,32 @@
         "cta": { "label": "Get in touch", "path": "/contact" },
         "slides": [
           {
-            "image": "/assets/images/packageService/slide-1.webp",
+            "image": "/assets/images/packageService/slide-1.png",
             "title": "Precision Filling",
             "description": "High-accuracy filling for various bottle and container sizes."
           },
           {
-            "image": "/assets/images/packageService/slide-2.webp",
+            "image": "/assets/images/packageService/slide-2.png",
             "title": "Flexible Packaging Formats",
             "description": "Wide range of packaging options to suit your product needs."
           },
           {
-            "image": "/assets/images/packageService/slide-3.webp",
+            "image": "/assets/images/packageService/slide-3.png",
             "title": "Packaging",
             "description": "Professional capping, labelling, and secondary packaging solutions for a complete finished product."
           },
           {
-            "image": "/assets/images/packageService/slide-4.webp",
+            "image": "/assets/images/packageService/slide-4.png",
             "title": "Carton Packaging",
             "description": "Tailored carton solutions to protect and present your products."
           },
           {
-            "image": "/assets/images/packageService/slide-5.webp",
+            "image": "/assets/images/packageService/slide-5.png",
             "title": "Private Label",
             "description": "Support for your private label development and growth."
           },
           {
-            "image": "/assets/images/packageService/slide-6.webp",
+            "image": "/assets/images/packageService/slide-6.png",
             "title": "Export Ready",
             "description": "Packaging and documentation for international markets."
           }

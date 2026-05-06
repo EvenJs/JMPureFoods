@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageWrapper from "@/components/ui/PageWrapper";
 import ScrollToTop from "@/components/layout/ ScrollToTop";
+import NotFound from "./pages/NotFound";
 
 const Home = lazy(() => import("@/pages/Home"));
 const About = lazy(() => import("@/pages/About"));
@@ -69,6 +70,14 @@ export default function App() {
                 element={
                   <PageWrapper>
                     <ContactUs />
+                  </PageWrapper>
+                }
+              />
+              <Route
+                path="*"
+                element={
+                  <PageWrapper>
+                    <NotFound />
                   </PageWrapper>
                 }
               />

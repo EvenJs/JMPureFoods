@@ -1,10 +1,10 @@
 import { Helmet } from "react-helmet-async";
-import { MdPhone } from "react-icons/md";
 import DetailCard from "@/components/sections/contactUs/ContactDetailCard";
 import ContactForm from "@/components/sections/contactUs/ContactForm";
 import ContactHero from "@/components/sections/contactUs/ContactHero";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { StaggerContainer, StaggerItem } from "@/components/ui/Stagger";
+import ContactCallSection from "@/components/sections/contactUs/ContactCallSection";
 import data from "@/data/siteData.json";
 
 export default function ContactUs() {
@@ -28,7 +28,6 @@ export default function ContactUs() {
         <link rel="canonical" href="https://jmpurefoods.com.au/contact" />
       </Helmet>
       <ContactHero />
-
       {/* Contact detail cards */}
       <section className="bg-off-white py-14 px-6">
         <div className="max-w-5xl mx-auto">
@@ -41,7 +40,6 @@ export default function ContactUs() {
           </StaggerContainer>
         </div>
       </section>
-
       {/* Form + company info */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-6xl mx-auto">
@@ -100,32 +98,7 @@ export default function ContactUs() {
           </div>
         </div>
       </section>
-
-      {/* Bottom CTA strip */}
-      <section className="py-16 px-6" style={{ backgroundColor: "#1e4028" }}>
-        <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-white">
-            Prefer to talk directly?
-          </h2>
-          <p className="text-white/60 text-sm">
-            Call us during business hours and we'll be happy to help.
-          </p>
-          <a
-            href={`tel:${company.phone.replace(/\s/g, "")}`}
-            className="
-              inline-flex items-center gap-2
-              bg-gold hover:bg-gold-light
-              text-white text-sm font-semibold
-              uppercase tracking-widest
-              px-8 py-3.5 rounded-xl
-              transition-colors duration-200
-            "
-          >
-            <MdPhone size={16} />
-            {company.phone}
-          </a>
-        </div>
-      </section>
+      <ContactCallSection />
     </>
   );
 }

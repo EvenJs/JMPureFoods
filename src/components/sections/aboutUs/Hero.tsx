@@ -5,7 +5,7 @@ import data from "@/data/siteData.json";
 export default function AboutHero() {
   const { hero } = data.pages.about;
   return (
-    <section className="relative min-h-80 md:min-h-100 flex items-center overflow-hidden">
+    <section className="relative min-h-80 md:min-h-135 flex items-center overflow-hidden">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

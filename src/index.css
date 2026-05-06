@@ -19,3 +19,8 @@
     border-radius: 4px;
   }
 }
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+}

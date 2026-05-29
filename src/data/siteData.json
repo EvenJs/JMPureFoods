@@ -6,7 +6,7 @@
     "abn": "91 690 274 901",
     "acn": "690 274 901",
     "address": "2 Exchange Dr, Pakenham VIC 3810",
-    "phone": "+61 428 254 866",
+    "phone": "1300368353",
     "email": "info@jmpurefoods.com.au",
     "logo": "/assets/images/logo.webp",
     "tagline": "Your Trusted Toll Packing Partner",
@@ -501,8 +501,8 @@
         {
           "icon": "phone",
           "label": "Phone",
-          "value": "+61 428 254 866",
-          "href": "tel:+61428254866"
+          "value": "1300368353",
+          "href": "tel:1300368353"
         },
         {
           "icon": "mail",

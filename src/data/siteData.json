@@ -208,24 +208,19 @@
         "heading": "Why Partner with JM Purefoods?",
         "items": [
           {
-            "icon": "globe",
-            "title": "Australian Based",
-            "description": "Local expertise with global sourcing standards."
+            "image": "/assets/images/about/certificate1.png",
+            "title": "SQF Certified",
+            "description": "Safe Quality Food Certified Facility"
           },
           {
-            "icon": "shield-check",
-            "title": "Quality Driven",
-            "description": "Committed to clean, high-quality products you can trust."
+            "image": "/assets/images/about/certificate2.png",
+            "title": "HACCP Certified",
+            "description": "Food Safety Management System based on HACCP Principles"
           },
           {
-            "icon": "layers",
-            "title": "End-to-End Solutions",
-            "description": "From sourcing to shelf — we handle it all."
-          },
-          {
-            "icon": "users",
-            "title": "Partner Focused",
-            "description": "Your success is our priority. Let's grow together."
+            "image": "/assets/images/about/certificate3.png",
+            "title": "GMP Certified",
+            "description": "Good Manufacturing Practices for Food Safety and Quality"
           }
         ]
       }
